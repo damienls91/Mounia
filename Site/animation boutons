@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d'accueil dynamique</title>
+  <style>
+    /* Animation pour les boutons */
+    .animated-button {
+      padding: 12px 24px;
+      background-color: #3B82F6; /* Couleur bleue */
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    }
+
+    .animated-button:hover {
+      transform: scale(1.1); /* Agrandissement au survol */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+      background-color: #2563EB; /* Changement de couleur au survol */
+    }
+
+    .animated-button:active {
+      transform: scale(0.95); /* Réduction légère au clic */
+    }
+
+    /* Animation pour les cartes */
+    .animated-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .animated-card:hover {
+      transform: translateY(-10px); /* Légère élévation au survol */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+    }
+
+    /* Animation pour les titres */
+    .animated-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1E293B; /* Couleur de texte */
+      transition: color 0.3s ease;
+    }
+
+    .animated-title:hover {
+      color: #3B82F6; /* Changement de couleur au survol */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <!-- Boutons avec animations -->
+  <div class="flex space-x-4 mb-8">
+    <button class="animated-button">Bouton 1</button>
+    <button class="animated-button">Bouton 2</button>
+  </div>
+
+  <!-- Cartes avec animations -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Carte 1 -->
+    <div class="animated-card">
+      <h3 class="animated-title">Service 1</h3>
+      <p class="text-gray-700">Description du service 1. Ce service est incroyable et très utile.</p>
+    </div>
+
+    <!-- Carte 2 -->
+    <div class="animated-card">
+      <h3 class="animated-title">Service 2</h3>
+      <p class="text-gray-700">Description du service 2. Ce service est tout aussi impressionnant.</p>
+    </div>
+
+    <!-- Carte 3 -->
+    <div class="animated-card">
+      <h3 class="animated-title">Service 3</h3>
+      <p class="text-gray-700">Description du service 3. Ce service est fantastique.</p>
+    </div>
+  </div>
+
+  <!-- Section avec animation de titre -->
+  <div class="mt-8">
+    <h2 class="animated-title">Pourquoi choisir nos services ?</h2>
+    <p class="text-gray-700">Nous offrons des solutions innovantes et adaptées à vos besoins.</p>
+  </div>
+
+</body>
+</html>
