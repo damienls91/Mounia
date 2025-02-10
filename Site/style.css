@@ -124,7 +124,7 @@ body, html {
 
 /*Spécifique à la zone avec le texte défile */
 .zone-texte {
-    width: 1278px;  /* Largeur fixe de 1800 pixels */
+    width: 1261px;  /* Largeur fixe de 1800 pixels */
     height: 30px;  /* Hauteur fixe de 30 pixels */
     overflow: hidden; /* Cache le texte qui dépasse */ 
 }
@@ -159,3 +159,46 @@ body, html {
     }
 
     
+                                        /*CATHEGORIE SUIVANTE/*
+
+
+/* Container du Carousel */
+    .carousel-container {
+        width:90%;
+        height: 300px; /* Fixe une hauteur (mets la valeur qui te convient) */
+        margin: 20px auto; /* Marge de 20px en haut et en bas et centré horizontalement */
+        overflow: hidden; /* Cache les éléments qui dépassent */
+        position: relative; /* Position relative */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+    
+/* Conteneur des slides */
+    .carousel-slide_Global {
+        display: flex; /* Active le flexbox */
+        animation: slideAnimation 30s infinite; /* Durée totale de l'animation */
+    }
+    
+/* Chaque slide */
+    .carousel-slide {
+        min-width: 100%; /* Largeur Image */
+        box-sizing: border-box; /* Inclut les bordures et les marges dans la largeur */
+    }
+  
+/* Animation de défilement automatique */
+    .carousel-slide img {
+        width: 100%; /* Espace occupé dans le cadre */
+        height: auto; /* Hauteur automatique */
+        border-radius: 10px; /* Coins arrondis */
+    }
+    
+    
+/* Animation de défilement automatique */
+    @keyframes slideAnimation {
+        0%, 20% { transform: translateX(0); }      /* Image 1 affichée */
+        25%, 40% { transform: translateX(-100%); } /* Image 2 affichée */
+        45%, 60% { transform: translateX(-200%); } /* Image 3 affichée */
+        65%, 80% { transform: translateX(-300%); } /* Image 4 affichée */
+        85%, 100% { transform: translateX(-400%); } /* Image 5 affichée */
+        100%, 0% { transform: translateX(0); }      /* Image 1 affichée *0/
+    }
