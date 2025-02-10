@@ -1,0 +1,291 @@
+<!DOCTYPE html> 
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>Présentation</title>
+	</head>
+	<body>
+
+	<!-- Bandeau Principal -->
+		<div class="bandeau_entête"> 
+			<h1> La Cybersécurité : Une nécessité à notre ère </h1>
+		</div>
+
+	<!-- Bandeau avec menu -->
+		<div class="bandeau"> 
+
+			<!-- logo -->
+				<div class="logo">
+    				<figure>
+       					<img src="../Photo/logo.jpg" alt="Image" height="48" width="50">
+    				</figure>
+				</div>
+
+			<!-- menu -->
+    			<div class="menu_bandeau">
+        			<nav>
+        	    		<ul>
+        	        		<a href="#">Nos Employés</a>
+							<!--sous_menu_1 -->
+									<ul class="sous-menu">
+										<li><a href="#">Option 1</a></li>
+										<li><a href="#">Option 2</a></li>
+										<li><a href="#">Option 3</a></li>
+									</ul>
+        	        			<a href="#">Mail</a>
+							<!-- sous_menu_1 -->
+									<ul class="sous-menu">
+										<li><a href="#">Option 1</a></li>
+										<li><a href="#">Option 2</a></li>
+										<li><a href="#">Option 3</a></li>
+									</ul>
+								<a href="#">Linkedin</a>
+							<!-- sous_menu_1 -->
+									<ul class="sous-menu">
+										<li><a href="#">Option 1</a></li>
+										<li><a href="#">Option 2</a></li>
+										<li><a href="#">Option 3</a></li>
+									</ul>
+        				</ul>
+        			</nav>
+    			</div>
+		</div>
+
+	<!-- Bandeau Principal -->
+	<div class="bandeau_défile"> 
+		<h2> BREAKING NEWS </h2>
+			<span class = "symbole" > </span><img src="https://www.zataz.com/wp-content/themes/worldwide-v1-05/images/icon/light/breaking-news-head.png" alt="Image" height="50" width="30"></span>
+		<div class="zone-texte">
+			<div class="defilant">
+				<a href="https://www.linkedin.com/in/innocent-twagirumukiza/"  target="_blank" > Innocent Twagirumukiza </a>
+				<a href="https://www.linkedin.com/company/cyberveille/"  target="_blank" > CyberVeille FR </a>
+				<a href="https://www.zataz.com/"  target="_blank" > Toute l'actualité cyber sur : zataz </a>
+				<a href="https://www.cert.ssi.gouv.fr/"  target="_blank" > Vous avez un risque de sécurité informatique : Contacter le CERT-FR </a>
+				<a href="https://cyber.gouv.fr/"  target="_blank" > Vous avez des question concernant la Cybersécurité : Aller sur le site de l'ANSSI </a>
+			</div>
+		</div>
+	</div>
+
+	
+
+		<figure>
+			<img src= "" alt="Image" height="10" width="10">
+			<figcaption> Description de la photo</figcaption>
+		</figure>
+
+		<ul class="_flyouts_558sn_37"  data-auto-id="main-menu">
+			<a href="CV/Bilel_cv.html"  target="_blank" >
+				<img src="../Photo/Bilel.jpg" alt="Image" height="256" width="192">
+			</a>
+			<a href="CV/Ferhat_cv.html" target="_blank" >
+				<img src="../Photo/Ferhat.jpg" alt="Image" height="256" width="192" >
+			</a>
+			<a href="CV/Damien_cv.html" target="_blank" >
+				<img src="../Photo/Damien.png" alt="Image" height="256" width="192">
+			</a>
+			<a href="CV/Mounia_cv.html" target="_blank" >
+				<img src="../Photo/Mounia.jpg" alt="Image" height="256" width="192">
+			</a>
+			<a href="CV/Dame_cv.html" target="_blank" >
+				<img src="../Photo/Dame.jpg" alt="Image" height="256" width="192">
+			</a>
+		</ul>
+
+	<!-- Barre de navigation -->
+	<div class="essaie">
+	    <h2>Contact</h2>
+ 	   <nav>
+    	    <ul>
+        	    <li><a href="Nom Prénom">Nom Prénom</a></li>
+        	    <li><a href="Mail">Mail</a></li>
+        	    <li><a href="Linkedin">Linkedin</a></li>
+        	</ul>
+		</nav>
+    </div>
+
+	
+	</body>
+	</html>
+	aria-haspopup="true"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    body, html {
+        margin: 0; /*supprime les marges sur les coté */
+        padding: 0; /*supprime les marges en haut et en bas */
+    }
+    
+    
+    /*Spécifique au bandeau principal */
+        .bandeau_entête {
+            width: 100%;  /* Largeur totale */
+            height: 50px; /* Hauteur du bandeau (modifiable) */
+            background-color: rgb(0, 0, 81); /* Couleur du fond */
+            color: orange; /* Couleur du texte */
+            display: flex; /* Active le flexbox */
+            align-items: center; /* Centre verticalement */
+            justify-content: center; /* Centre horizontalement */
+            font-size: 13px; /* Taille du texte */
+        }
+    
+    
+    /*Spécifique au bandeau avec le menu à l'interieur */
+        .bandeau {
+            background-color: #b32626 ; /* Couleur du fond */
+            display: flex; /* Active Flexbox */
+            align-items: center; /* Centre verticalement */
+            width: 100%;  /* Largeur totale */
+            height: 50px; /* Hauteur du bandeau (modifiable) */
+        }
+    
+    
+    /*Spécifique au logo du bandeau */
+        .logo {
+            display: flex; /* Active Flexbox */
+            margin-top: 5px; /* Décale le menu vers le bas */
+            margin-left: 40px; /* Marge à gauche */
+        }
+    
+    
+    /*Spécifique au menu du bandeau */
+        .menu_bandeau {
+            display: flex; /* Active le flexbox */
+            justify-content: center; /* Centre horizontalement les éléments du menu */
+            margin-top: 18px; /* Décale le menu vers le bas */
+            font-size: 30px; /* Taille du texte */
+            font-family: 'Arial', sans-serif; /* Type de police */
+            font-weight: bold; /* Texte en gras */
+            width: 70%; /* Prend toute la largeur disponible */
+        }
+    
+    
+    
+    /*Spécifique aux liens du menu <a> */
+        .menu_bandeau a { 
+            color: black; /* Change la couleur des liens */
+            text-decoration: none; /* Enlève le soulignement des liens */
+        }
+    
+    
+    /*Spécifique aux différents lien du menu */
+        .menu_bandeau ul a {
+            margin-right: 100px; /* Ajoute de l'espace entre les éléments de la liste */
+            font-size: 25px; /* Taille du texte */
+        }
+    
+    
+    /*Spécifique aux sous menu */
+        .sous-menu {
+            display: none; /* Caché par défaut */
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*0px = Pas de décalage horizontal 4px = Ombre vers le bas 8px = Flou de l'ombre rgba(0, 0, 0, 0.2) = Ombre noire transparente à 20%.*/
+            padding: 10px ; /*Ajoute de l'espace intérieur en haut et en bas du sous-menu*/
+            list-style: none; /* supprime les puces des listes */
+            min-width: 150px;
+        }
+        
+        
+    /*Spécifique aux sous menu */
+        .sous-menu li {
+            padding: 8px 12px;
+        }
+        
+        
+        
+        .sous-menu li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        
+        
+        /* Affiche le menu lorsqu'on survole "Menu" */
+        .menu-deroulant:hover .sous-menu {
+            display: block;
+        }
+        
+    
+    
+    /*Spécifique au menu du bandeau */
+    .bandeau_défile {
+        height: 50px; /* Hauteur du bandeau (modifiable) */
+        background-color: #333333; /* Couleur du fond */
+        color: orange; /* Couleur du texte */
+        display: flex; /* Active le flexbox */
+        align-items: center; /* Centre verticalement */
+        font-family: 'Arial', sans-serif; /* Type de police */
+        font-weight: bold; /* Texte en gras */
+        margin-left: 40px; /* Marge à gauche */
+        margin-right: 40px; /* Marge à droite */
+        padding-left: 40px; /* Décale le texte à 40px du bord gauche du bandeau */
+    }
+    
+    
+    
+    .texte {
+        margin-top: 50px; /* Décale le menu vers le bas */
+    }
+    
+    
+    
+    .symbole {
+        margin-left: 10px; /* Marge à gauche */
+    }
+    
+    
+    
+    .zone-texte {
+        width: 1250px;  /* Largeur fixe de 1800 pixels */
+        height: 30px;  /* Hauteur fixe de 50 pixels */
+        overflow: hidden; /* Cache le texte qui dépasse */ 
+    }
+    
+    
+    
+    .defilant {
+        white-space: nowrap; /* Empêche le texte de revenir à la ligne */
+        overflow: hidden; /* Cache le texte qui dépasse */
+        animation: defilement 30s linear infinite; /* Animation du texte */
+        color: red; /* Couleur du texte */
+        font-size: 17px; /* Taille du texte */
+        margin-top: 8px; /* Décale le menu vers le bas */
+        width: max-content; /* Ajuste automatiquement à la taille du contenu */
+    }
+    
+    
+    
+    .defilant a { 
+        color: orange; /* Change la couleur des liens */
+        text-decoration: none; /* Enlève le soulignement des liens */
+        margin-right: 110px; /* Marge à droite */
+    }
+    
+    
+    
+    @keyframes defilement {
+        0% {
+            transform: translateX(100%); /* Commence à droite */
+        }
+        100% {
+            transform: translateX(-100%); /* Termine à gauche */
+        }
+    }
+    

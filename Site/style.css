@@ -1,0 +1,161 @@
+body, html {
+    margin: 0; /*supprime les marges sur les coté */
+    padding: 0; /*supprime les marges en haut et en bas */
+}
+
+
+/*Spécifique au bandeau principal */
+    .bandeau_entête {
+        width: 100%;  /* Largeur totale */
+        height: 50px; /* Hauteur du bandeau (modifiable) */
+        background-color: rgb(0, 0, 81); /* Couleur du fond */
+        color: orange; /* Couleur du texte */
+        display: flex; /* Active le flexbox */
+        align-items: center; /* Centre verticalement */
+        justify-content: center; /* Centre horizontalement */
+        font-size: 13px; /* Taille du texte */
+    }
+
+
+                                        /*CATHEGORIE SUIVANTE/*
+
+
+/*Spécifique au bandeau avec le menu à l'interieur */
+    .bandeau {
+        background-color: #b32626 ; /* Couleur du fond */
+        display: flex; /* Active Flexbox */
+        align-items: center; /* Centre verticalement */
+        width: 100%;  /* Largeur totale */
+        height: 60px; /* Hauteur du bandeau (modifiable) */
+    }
+
+
+/*Spécifique au logo du bandeau */
+    .logo {
+        display: flex; /* Active Flexbox */
+        margin-top: 4px; /* Décale le menu vers le bas */
+        margin-left: 40px; /* Marge à gauche */
+    }
+
+
+/*Spécifique au liens du menu du bandeau */
+    .menu_deroulant {
+        display: flex; /* Active le flexbox */
+        justify-content: center; /* Centre horizontalement les éléments du menu */
+        margin-top: 10px; /* Décale le menu vers le bas */
+        font-size: 30px; /* Taille du texte */
+        font-family: 'Arial', sans-serif; /* Type de police */
+        font-weight: bold; /* Texte en gras */
+        width: 80%; /* Prend toute la largeur disponible */
+    }
+
+
+
+/*Spécifique aux liens du menu <a> */
+    .menu_deroulant a { 
+        color: black; /* Change la couleur des liens */
+        text-decoration: none; /* Enlève le soulignement des liens */
+        margin-right: 100px; /* Ajoute de l'espace entre les éléments de la liste */
+        font-size: 25px; /* Taille du texte */
+    }
+
+
+/*Spécifique aux  menu */
+    .menu_deroulant li { 
+        display: inline-block; /* Mets les 3 menu sur la meme ligne  */
+    }
+
+
+/*Spécifique aux sous menu */
+    .sous-menu {
+        display: none; /* Caché par défaut */
+        position: absolute;
+        background-color: white;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /*0px = Pas de décalage horizontal 4px = Ombre vers le bas 8px = Flou de l'ombre rgba(0, 0, 0, 0.2) = Ombre noire transparente à 20%.*/
+        padding: 10px ; /*Ajoute de l'espace intérieur en haut et en bas du sous-menu*/
+        list-style: none; /* supprime les puces des listes */
+        margin: 0; /* Évite tout écart entre le menu et le sous-menu */
+        z-index: 1000; /* 🔥 Assure que le sous-menu est au premier plan */
+    }
+    
+    
+/*Spécifique aux sous menu */
+    .sous-menu li {
+        display: block ; /*pour affiché le sous menu en block: Comme une liste*/
+        padding: 8px 12px;
+    }
+    
+    
+/* Spécifique à l'affichage des sous menus */
+    .menu_deroulant li:hover .sous-menu {
+        display: block;
+    }
+
+
+    .sous-menu:hover {
+        display: block;
+    }
+
+
+                                        /*CATHEGORIE SUIVANTE/*
+
+
+/*Spécifique Bandeau qui défile */
+    .bandeau_défile {
+    height: 50px; /* Hauteur du bandeau (modifiable) */
+    background-color: #333333; /* Couleur du fond */
+    color: orange; /* Couleur du texte */
+    display: flex; /* Active le flexbox */
+    align-items: center; /* Centre verticalement */
+    font-family: 'Arial', sans-serif; /* Type de police */
+    font-weight: bold; /* Texte en gras */
+    margin-left: 40px; /* Marge à gauche */
+    margin-right: 40px; /* Marge à droite */
+    margin-top: 10px; /* Décale le menu vers le bas */
+    padding-left: 40px; /* Décale le texte à 40px du bord gauche du bandeau */
+    }
+
+
+/*Spécifique symbole du Bandeau qui défile */
+    .symbole {
+        margin-left: 10px; /* Marge à gauche */
+    }
+
+
+/*Spécifique à la zone avec le texte défile */
+.zone-texte {
+    width: 1278px;  /* Largeur fixe de 1800 pixels */
+    height: 30px;  /* Hauteur fixe de 30 pixels */
+    overflow: hidden; /* Cache le texte qui dépasse */ 
+}
+
+
+/*Spécifique au texte qui défile */
+    .defilant {
+        white-space: nowrap; /* Empêche le texte de revenir à la ligne */
+        animation: defilement 30s linear infinite; /* Animation/Durée du texte */
+        font-size: 17px; /* Taille du texte */
+        margin-top: 8px; /* Décale le menu vers le bas */
+        width: max-content; /* Ajuste automatiquement à la taille du contenu */
+    }
+
+
+/*Spécifique au lien du texte */
+    .defilant a { 
+        color: orange; /* Change la couleur des liens */
+        text-decoration: none; /* Enlève le soulignement des liens */
+        margin-right: 110px; /* espacement entre les liens */
+    }
+
+
+/*Spécifique à l'orientation du défilement du texte  */
+    @keyframes defilement {
+       0% {
+            transform: translateX(100%); /* Commence à droite */
+        }
+        100% {
+            transform: translateX(-100%); /* Termine à gauche */
+        }
+    }
+
+    
