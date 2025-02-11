@@ -3,52 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Nom Prénom</title>
+    <title>Carrousel Hexagonal CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 220px;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            width: 1000%;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide {
+            width: 220px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        /* HEXAGONE */
+        .hexagon {
+            width: 200px;
+            height: 230px;
+            position: relative;
+            display: inline-block;
+            background: gold;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            overflow: hidden;
+        }
+
+        .hexagon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* NAVIGATION */
+        .carousel input {
+            display: none;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .prev, .next {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .prev:hover, .next:hover {
+            background: white;
+        }
+
+        /* AUTOMATIQUE */
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            20% { transform: translateX(-100%); }
+            40% { transform: translateX(-200%); }
+            60% { transform: translateX(-300%); }
+            80% { transform: translateX(-400%); }
+        }
+
+        .carousel {
+            animation: slide 50s infinite;
+        }
+
+    </style>
 </head>
 <body>
 
-    <!-- En-tête -->
-    <header class="bandeau">
-        <img src="photo.jpg" alt="Photo de profil" class="photo-profil">
-        <h1>Nom Prénom</h1>
-    </header>
-
-    <!-- Résumé -->
-    <section class="resume">
-        <h2>Mon parcours professionnel</h2>
-        <p>.....</p>
-    </section>
-
-    <section class="Formation">
-        <h2>Ma formation</h2>
-        <p>.....</p>
-    </section>
-
-    <!-- CV Téléchargeable -->
-    <section class="cv">
-        <h2>Mon CV</h2>
-        <a href="cv.pdf" download>Télécharger le CV (PDF)</a>
-    </section>
-
-    <!-- Portfolio -->
-    <section class="Mon portfolio">
-        <h2>Lien vers mon Portfolio</h2>
-        <div class="portfolio">
-            <a href="../Portfolio/Bilel_Portfolio.html">Voir le projet</a>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <div class="hexagon"><img src="../../Photo/Bilel.jpg" alt="Sport Betting"></div>
+            </div>
+            <div class="slide">
+                <div class="hexagon"><img src="../../Photo/Damien.png" alt="Casino Online"></div>
+            </div>
+            <div class="slide">
+                <div class="hexagon"><img src="../../Photo/Dame.jpg" alt="Slot Online"></div>
+            </div>
+            <div class="slide">
+                <div class="hexagon"><img src="../../Photo/logo.jpg" alt="Lotto Betting"></div>
+            </div>
         </div>
-    </section>
 
-<!-- Barre de navigation -->
-<section class="Contact">
-    <h2>Contact</h2>
-    <nav>
-        <ul>
-            <li><a href="Nom Prénom">Nom Prénom</a></li>
-            <li><a href="Mail">Mail</a></li>
-            <li><a href="Linkedin">Linkedin</a></li>
-        </ul>
-    </section>
-</nav>
+        <div class="carousel-nav">
+            <label for="slide1" class="prev">❮</label>
+            <label for="slide2" class="next">❯</label>
+        </div>
+    </div>
 
 </body>
 </html>
