@@ -26,14 +26,14 @@ body, html {
         display: flex; /* Active Flexbox */
         align-items: center; /* Centre verticalement */
         width: 100%;  /* Largeur totale */
-        height: 95px; /* Hauteur du bandeau (modifiable) */
+        height: 98px; /* Hauteur du bandeau (modifiable) */
     }
 
 
 /*Spécifique au logo du bandeau */
     .logo {
         display: flex; /* Active Flexbox */
-        margin-top: 2px; /* Décale le menu vers le bas */
+        margin-top: 4px; /* Décale le menu vers le bas */
         margin-left: 40px; /* Marge à gauche */
     }
 
@@ -53,8 +53,8 @@ body, html {
 /*Spécifique aux liens du menu <a> */
     .menu_deroulant a { 
         color: black; /* Change la couleur des liens */
-        margin-right: 0px; /* Ajoute de l'espace entre les éléments de la liste */
         font-size: 25px; /* Taille du texte */
+        padding: 10px; /* Ajoute de l'espace intérieur en haut et en bas du menu */
         
     }
 
@@ -63,8 +63,6 @@ body, html {
     .menu_deroulant li { 
         display: inline-block; /* Mets les 3 menu sur la meme ligne  */
         position: relative; 
-        padding: 5px; /* Ajoute de l'espace autour de chaque élément de menu */
-        padding-right: 200px;
         margin-left: 100px;
     }
 
@@ -76,21 +74,18 @@ body, html {
         background-color: white;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /*0px = Pas de décalage horizontal 4px = Ombre vers le bas 8px = Flou de l'ombre rgba(0, 0, 0, 0.2) = Ombre noire transparente à 20%.*/
         list-style: none; /* supprime les puces des listes */
-        justify-content: space-evenly; /* Espacement égal entre les éléments */
-        width: 100%;  /* Largeur totale */
-        margin-left: -35px; /* Marge à gauche */
-        padding: 10px ; /*Ajoute de l'espace intérieur en haut et en bas du sous-menu*/
-        height: 300px; /* Hauteur du bandeau (modifiable) */
+        width: 200%;  /* Largeur totale */
+        height: 350px; /* Hauteur du bandeau (modifiable) */
+        padding-top: 10% ; /*Ajoute de l'espace intérieur en haut et en bas du sous-menu*/
         z-index: 1000; /* 🔥 Assure que le sous-menu est au premier plan */
+        padding-left: 20px; /* Ajoute de l'espace intérieur à gauche */
     }
     
     
 /*Spécifique aux sous menu */
     .sous-menu li {
         display: block ; /*pour affiché le sous menu en block: Comme une liste*/
-        padding: 12px 0px;  /* Ajoute de l'espace entre les éléments du sous-menu */
-        left: -75px; /* Alignement à gauche */
-
+        left: -25%; /* Alignement à gauche */
     }
     
     
@@ -132,7 +127,7 @@ body, html {
 
 /*Spécifique à la zone avec le texte défile */
 .zone-texte {
-    width: 1261px;  /* Largeur fixe de 1800 pixels */
+    width: 1151px;  /* Largeur fixe de 1800 pixels */
     height: 30px;  /* Hauteur fixe de 30 pixels */
     overflow: hidden; /* Cache le texte qui dépasse */ 
 }

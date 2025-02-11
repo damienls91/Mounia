@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="Exemple.css">
+		<link rel="stylesheet" href="style.css">
 		<title>Présentation</title>
 	</head>
 	<body>
-		<main
-	<!-- Bandeau avec menu -->
+
+	<!-- Bandeau Principal -->
 		<div class="bandeau_entête"> 
 			<h1> La Cybersécurité : Une nécessité à notre ère </h1>
 		</div>
@@ -19,20 +19,22 @@
 			<!-- logo -->
 				<div class="logo">
     				<figure>
-       					<img src="../Photo/logo.jpg" alt="Image" height="48" width="50">
+       					<img src="https://cybervictime.net/wp-content/uploads/2020/09/Cybervictime.net_.gif" alt="Image" height="90" width="130">
     				</figure>
 				</div>
 
 			<!-- menu -->
         		<nav class="menu_deroulant">  
 					<ul> 
-							<!-- sous_menu_2 -->
+							<!-- sous_menu_1 -->
 						<li>   
-							<a href="#">Nos Employé</a>
+							<a href="#">Nos Employés</a>
 							<ul class="sous-menu">
-								<li><a href="#">Option 1</a></li>
-								<li><a href="#">123 2vhvcshvsuv</a></li>
-								<li><a href="#">Option 3</a></li>
+								<li><a href="CV/Ferhat_cv.html"  target="_blank" > M BELLABAS Ferhat</li>
+								<li><a href="CV/Bilel_cv.html"  target="_blank" > M GARBOUZ Bilel</li>
+								<li><a href="CV/Dame_cv.html"  target="_blank" > M FALL Dame</li>
+								<li><a href="CV/Mounia_cv.html"  target="_blank" > Mme JLAIFA Mounia</li>
+								<li><a href="CV/Damien_cv.html"  target="_blank" > M LAMARRE Damien</li>
 							</ul>
 						</li> 
 							<!-- sous_menu_2 -->
@@ -46,7 +48,7 @@
 						</li> 
 							<!-- sous_menu_3 -->
 						<li>   
-							<a href="#">Linkedin</a>
+							<a href="#">LinkedIn</a>
 							<ul class="sous-menu">
 								<li><a href="#"> 1</a></li>
 								<li><a href="#">Option 2</a></li>
@@ -57,7 +59,7 @@
         		</nav>
 		</div>
 
-	<!-- Bandeau Principal -->
+	<!-- Bandeau Défile -->
 	<div class="bandeau_défile"> 
 		<h2> BREAKING NEWS </h2>
 			<span class = "symbole" > </span><img src="https://www.zataz.com/wp-content/themes/worldwide-v1-05/images/icon/light/breaking-news-head.png" alt="Image" height="50" width="30"></span>
@@ -72,29 +74,32 @@
 		</div>
 	</div>
 
+		 <!-- Section Carrousel -->
+	<div class="carousel-container">
+    	<div class="carousel-slide_Global">
+        	<div class="carousel-slide">
+            	<img src="../Photo/image 1.jpg" alt="Image 0">
+        	</div>
+        	<div class="carousel-slide">
+            	<img src="../Photo/image 2.jpg" alt="Image 1">
+        	</div>
+        	<div class="carousel-slide">
+            	<img src="../Photo/image 3.jpg" alt="Image 2">
+	        </div>
+			<div class="carousel-slide">
+        	    <img src="../Photo/image 4.jpg" alt="Image 3">
+	        </div>
+			<div class="carousel-slide">
+        	    <img src="../Photo/image 5.jpg" alt="Image 4">
+	        </div>
+			<div class="carousel-slide">
+        	    <img src="#" alt="Image 5">
+	        </div>
+    	</div>
+	</div>
 	
-	 <!-- Section Carrousel -->
-<div class="carousel-container">
-    <div class="carousel-slide_Global">
-        <div class="carousel-slide">
-            <img src="https://cybervictime.net/wp-content/uploads/2020/09/Cybervictime.net_.gif" alt="Image 1">
-            <figcaption>Image 1</figcaption>
-        </div>
-        <div class="carousel-slide">
-            <img src="../Photo/image 5.jpg" alt="Image 2">
-            <figcaption>Image 2</figcaption>
-        </div>
-        <div class="carousel-slide">
-            <img src="../Photo/image 1.jpg" alt="Image 3">
-            <figcaption>Image 3</figcaption>
-        </div>
-    </div>
-</div>
 
-
-
-
-		<ul class="_flyouts_558sn_37"  data-auto-id="main-menu">
+	<ul class="_flyouts_558sn_37"  data-auto-id="main-menu">
 			<a href="CV/Bilel_cv.html"  target="_blank" >
 				<img src="../Photo/Bilel.jpg" alt="Image" height="256" width="192">
 			</a>
@@ -124,17 +129,10 @@
 		</nav>
     </div>
 
-</main>
+	
 	</body>
 	</html>
-
-
-
-
-
-
-
-
+	aria-haspopup="true"
 
 
 
@@ -148,13 +146,13 @@
 /*Spécifique au bandeau principal */
     .bandeau_entête {
         width: 100%;  /* Largeur totale */
-        height: 50px; /* Hauteur du bandeau (modifiable) */
-        background-color: rgb(0, 0, 81); /* Couleur du fond */
+        height: 70px; /* Hauteur du bandeau (modifiable) */
+        background-color: rgb(0, 0, 126); /* Couleur du fond */
         color: orange; /* Couleur du texte */
         display: flex; /* Active le flexbox */
         align-items: center; /* Centre verticalement */
         justify-content: center; /* Centre horizontalement */
-        font-size: 13px; /* Taille du texte */
+        font-size: 15px; /* Taille du texte */
     }
 
 
@@ -163,11 +161,11 @@
 
 /*Spécifique au bandeau avec le menu à l'interieur */
     .bandeau {
-        background-color: #b32626 ; /* Couleur du fond */
+        background-color: #ff0000 ; /* Couleur du fond */
         display: flex; /* Active Flexbox */
         align-items: center; /* Centre verticalement */
         width: 100%;  /* Largeur totale */
-        height: 60px; /* Hauteur du bandeau (modifiable) */
+        height: 95px; /* Hauteur du bandeau (modifiable) */
     }
 
 
@@ -187,7 +185,6 @@
         font-size: 30px; /* Taille du texte */
         font-family: 'Arial', sans-serif; /* Type de police */
         font-weight: bold; /* Texte en gras */
-        width: 80%; /* Prend toute la largeur disponible */
     }
 
 
@@ -195,15 +192,19 @@
 /*Spécifique aux liens du menu <a> */
     .menu_deroulant a { 
         color: black; /* Change la couleur des liens */
-        text-decoration: none; /* Enlève le soulignement des liens */
-        margin-right: 100px; /* Ajoute de l'espace entre les éléments de la liste */
+        margin-right: 0px; /* Ajoute de l'espace entre les éléments de la liste */
         font-size: 25px; /* Taille du texte */
+        
     }
 
 
 /*Spécifique aux  menu */
     .menu_deroulant li { 
         display: inline-block; /* Mets les 3 menu sur la meme ligne  */
+        position: relative; 
+        padding: 5px; /* Ajoute de l'espace autour de chaque élément de menu */
+        padding-right: 200px;
+        margin-left: 100px;
     }
 
 
@@ -213,9 +214,12 @@
         position: absolute;
         background-color: white;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /*0px = Pas de décalage horizontal 4px = Ombre vers le bas 8px = Flou de l'ombre rgba(0, 0, 0, 0.2) = Ombre noire transparente à 20%.*/
-        padding: 10px ; /*Ajoute de l'espace intérieur en haut et en bas du sous-menu*/
         list-style: none; /* supprime les puces des listes */
-        margin: 0; /* Évite tout écart entre le menu et le sous-menu */
+        justify-content: space-evenly; /* Espacement égal entre les éléments */
+        width: 100%;  /* Largeur totale */
+        margin-left: -35px; /* Marge à gauche */
+        padding: 10px ; /*Ajoute de l'espace intérieur en haut et en bas du sous-menu*/
+        height: 300px; /* Hauteur du bandeau (modifiable) */
         z-index: 1000; /* 🔥 Assure que le sous-menu est au premier plan */
     }
     
@@ -223,7 +227,9 @@
 /*Spécifique aux sous menu */
     .sous-menu li {
         display: block ; /*pour affiché le sous menu en block: Comme une liste*/
-        padding: 8px 12px;
+        padding: 12px 0px;  /* Ajoute de l'espace entre les éléments du sous-menu */
+        left: -75px; /* Alignement à gauche */
+
     }
     
     
@@ -252,7 +258,7 @@
     font-weight: bold; /* Texte en gras */
     margin-left: 40px; /* Marge à gauche */
     margin-right: 40px; /* Marge à droite */
-    margin-top: 10px; /* Décale le menu vers le bas */
+    margin-top: 5px; /* Décale le menu vers le bas */
     padding-left: 40px; /* Décale le texte à 40px du bord gauche du bandeau */
     }
 
@@ -265,7 +271,7 @@
 
 /*Spécifique à la zone avec le texte défile */
 .zone-texte {
-    width: 1278px;  /* Largeur fixe de 1800 pixels */
+    width: 1261px;  /* Largeur fixe de 1800 pixels */
     height: 30px;  /* Hauteur fixe de 30 pixels */
     overflow: hidden; /* Cache le texte qui dépasse */ 
 }
@@ -299,55 +305,45 @@
         }
     }
 
-    /* Container du Carousel */
-.carousel-container {
-    width: 400px;
-    max-width: 200%;
-    margin: 20px auto;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    
+                                        /*CATHEGORIE SUIVANTE/*
 
+
+/* Container du Carousel */
+    .carousel-container {
+        width: 50% ;
+        margin: 10px auto; /* Marge de 20px en haut et en bas et centré horizontalement */
+        overflow: hidden; /* Cache les éléments qui dépassent */
+        position: relative; /* Position relative */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+    
 /* Conteneur des slides */
-.carousel-slide_Global {
-    display: flex;
-    animation: slideAnimation 9s infinite;
-}
-
+    .carousel-slide_Global {
+        display: flex; /* Active le flexbox */
+        animation: slideAnimation 30s linear infinite; /* Durée totale de l'animation */
+    }
+    
 /* Chaque slide */
-.carousel-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Style du texte sous l'image */
-.carousel-slide figcaption {
-    font-size: 16px;
-    color: #333;
-    margin-top: 10px;
-}
-
+    .carousel-slide {
+        min-width: 100%; /* Largeur Image */
+        box-sizing: border-box; /* Inclut les bordures et les marges dans la largeur */
+    }
+  
 /* Animation de défilement automatique */
-@keyframes slideAnimation {
-    0% {
-        transform: translateX(0);
+    .carousel-slide img {
+        width: 100%; /* Espace occupé dans le cadre */
+        height: auto; /* Hauteur automatique */
+        border-radius: 10px; /* Coins arrondis */
     }
-    33% {
-        transform: translateX(-100%);
+    
+    
+/* Animation de défilement automatique */
+    @keyframes slideAnimation {
+        0%, 20% { transform: translateX(0); }      /* Image 1 affichée */
+        25%, 40% { transform: translateX(-100%); } /* Image 2 affichée */
+        45%, 60% { transform: translateX(-200%); } /* Image 3 affichée */
+        65%, 80% { transform: translateX(-300%); } /* Image 4 affichée */
+        85%, 100% { transform: translateX(-400%); } /* Image 5 affichée */
     }
-    66% {
-        transform: translateX(-200%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
