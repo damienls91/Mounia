@@ -1,205 +1,179 @@
-body, html {
-    margin: 0; /*supprime les marges sur les coté */
-    padding: 0; /*supprime les marges en haut et en bas */
+body {
+    background-image: url('images/background.jpg'); /* Chemin vers votre image */
+    background-size: cover; /* Couvre toute la page */
+    background-repeat: no-repeat; /* Ne répète pas l'image */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    background-position: center; /* Centre l'image */
+    color: #fff; /* Couleur du texte pour s'assurer qu'il est lisible */
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    margin: 0;
+    padding: 0;
 }
 
+/* Bandeau Principal */
+.bandeau_entête {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    padding: 20px;
+    text-align: center;
+}
 
-/*Spécifique au bandeau principal */
-    .bandeau_entête {
-        width: 100%;  /* Largeur totale */
-        height: 70px; /* Hauteur du bandeau (modifiable) */
-        background-color: rgb(0, 0, 126); /* Couleur du fond */
-        color: orange; /* Couleur du texte */
-        display: flex; /* Active le flexbox */
-        align-items: center; /* Centre verticalement */
-        justify-content: center; /* Centre horizontalement */
-        font-size: 15px; /* Taille du texte */
-    }
+/* Bandeau avec menu */
+.bandeau {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    padding: 10px 20px;
+}
 
+/* Logo */
+.logo img {
+    height: 90px;
+    width: 140px;
+}
 
-                                        /*CATHEGORIE SUIVANTE/*
+/* Menu déroulant */
+.menu_deroulant ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
+.menu_deroulant li {
+    position: relative;
+    margin: 0 15px;
+}
 
-/*Spécifique au bandeau avec le menu à l'interieur */
-    .bandeau {
-        background-color: #ff0000 ; /* Couleur du fond */
-        display: flex; /* Active Flexbox */
-        align-items: center; /* Centre verticalement */
-        width: 100%;  /* Largeur totale */
-        height: 98px; /* Hauteur du bandeau (modifiable) */
-    }
+.menu_deroulant a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
 
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    list-style: none;
+}
 
-/*Spécifique au logo du bandeau */
-    .logo {
-        display: flex; /* Active Flexbox */
-        margin-top: 4px; /* Décale le menu vers le bas */
-        margin-left: 40px; /* Marge à gauche */
-    }
+.menu_deroulant li:hover .sous-menu {
+    display: block;
+}
 
+.sous-menu li {
+    margin: 0;
+}
 
-/*Spécifique au liens du menu du bandeau */
-    .menu_deroulant {
-        display: flex; /* Active le flexbox */
-        justify-content: center; /* Centre horizontalement les éléments du menu */
-        margin-top: 10px; /* Décale le menu vers le bas */
-        font-size: 30px; /* Taille du texte */
-        font-family: 'Arial', sans-serif; /* Type de police */
-        font-weight: bold; /* Texte en gras */
-    }
+.sous-menu a {
+    padding: 10px;
+}
 
+/* Bandeau Défile */
+.bandeau_défile {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    padding: 10px;
+    text-align: center;
+}
 
-
-/*Spécifique aux liens du menu <a> */
-    .menu_deroulant a { 
-        color: black; /* Change la couleur des liens */
-        font-size: 25px; /* Taille du texte */
-        padding: 10px; /* Ajoute de l'espace intérieur en haut et en bas du menu */
-        
-    }
-
-
-/*Spécifique aux  menu */
-    .menu_deroulant li { 
-        display: inline-block; /* Mets les 3 menu sur la meme ligne  */
-        position: relative; 
-        margin-left: 100px;
-    }
-
-
-/*Spécifique aux sous menu */
-    .sous-menu {
-        display: none; /* Caché par défaut */
-        position: absolute;
-        background-color: white;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /*0px = Pas de décalage horizontal 4px = Ombre vers le bas 8px = Flou de l'ombre rgba(0, 0, 0, 0.2) = Ombre noire transparente à 20%.*/
-        list-style: none; /* supprime les puces des listes */
-        width: 200%;  /* Largeur totale */
-        height: 350px; /* Hauteur du bandeau (modifiable) */
-        padding-top: 10% ; /*Ajoute de l'espace intérieur en haut et en bas du sous-menu*/
-        z-index: 1000; /* 🔥 Assure que le sous-menu est au premier plan */
-        padding-left: 20px; /* Ajoute de l'espace intérieur à gauche */
-    }
-    
-    
-/*Spécifique aux sous menu */
-    .sous-menu li {
-        display: block ; /*pour affiché le sous menu en block: Comme une liste*/
-        left: -25%; /* Alignement à gauche */
-    }
-    
-    
-/* Spécifique à l'affichage des sous menus */
-    .menu_deroulant li:hover .sous-menu {
-        display: block;
-    }
-
-
-    .sous-menu:hover {
-        display: block;
-    }
-
-
-                                        /*CATHEGORIE SUIVANTE/*
-
-
-/*Spécifique Bandeau qui défile */
-    .bandeau_défile {
-    height: 50px; /* Hauteur du bandeau (modifiable) */
-    background-color: #333333; /* Couleur du fond */
-    color: orange; /* Couleur du texte */
-    display: flex; /* Active le flexbox */
-    align-items: center; /* Centre verticalement */
-    font-family: 'Arial', sans-serif; /* Type de police */
-    font-weight: bold; /* Texte en gras */
-    margin-left: 40px; /* Marge à gauche */
-    margin-right: 40px; /* Marge à droite */
-    margin-top: 5px; /* Décale le menu vers le bas */
-    padding-left: 40px; /* Décale le texte à 40px du bord gauche du bandeau */
-    }
-
-
-/*Spécifique symbole du Bandeau qui défile */
-    .symbole {
-        margin-left: 10px; /* Marge à gauche */
-    }
-
-
-/*Spécifique à la zone avec le texte défile */
 .zone-texte {
-    width: 1151px;  /* Largeur fixe de 1800 pixels */
-    height: 30px;  /* Hauteur fixe de 30 pixels */
-    overflow: hidden; /* Cache le texte qui dépasse */ 
+    width: 100%;
+    overflow: hidden;
 }
 
+.defilant {
+    display: inline-block;
+    white-space: nowrap;
+    animation: defilement 30s linear infinite;
+}
 
-/*Spécifique au texte qui défile */
-    .defilant {
-        white-space: nowrap; /* Empêche le texte de revenir à la ligne */
-        animation: defilement 30s linear infinite; /* Animation/Durée du texte */
-        font-size: 17px; /* Taille du texte */
-        margin-top: 8px; /* Décale le menu vers le bas */
-        width: max-content; /* Ajuste automatiquement à la taille du contenu */
-    }
+@keyframes defilement {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
 
+/* Carrousel */
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
 
-/*Spécifique au lien du texte */
-    .defilant a { 
-        color: orange; /* Change la couleur des liens */
-        text-decoration: none; /* Enlève le soulignement des liens */
-        margin-right: 110px; /* espacement entre les liens */
-    }
+.carousel-slide_Global {
+    display: flex;
+    animation: slideAnimation 30s linear infinite;
+}
 
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
 
-/*Spécifique à l'orientation du défilement du texte  */
-    @keyframes defilement {
-       0% {
-            transform: translateX(100%); /* Commence à droite */
-        }
-        100% {
-            transform: translateX(-100%); /* Termine à gauche */
-        }
-    }
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
-    
-                                        /*CATHEGORIE SUIVANTE/*
+@keyframes slideAnimation {
+    0%, 20% { transform: translateX(0); }
+    25%, 40% { transform: translateX(-100%); }
+    45%, 60% { transform: translateX(-200%); }
+    65%, 80% { transform: translateX(-300%); }
+    85%, 100% { transform: translateX(-400%); }
+}
 
+/* Galerie d'Images */
+._flyouts_558sn_37 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 
-/* Container du Carousel */
-    .carousel-container {
-        width: 50% ;
-        margin: 10px auto; /* Marge de 20px en haut et en bas et centré horizontalement */
-        overflow: hidden; /* Cache les éléments qui dépassent */
-        position: relative; /* Position relative */
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    }
-    
-/* Conteneur des slides */
-    .carousel-slide_Global {
-        display: flex; /* Active le flexbox */
-        animation: slideAnimation 30s linear infinite; /* Durée totale de l'animation */
-    }
-    
-/* Chaque slide */
-    .carousel-slide {
-        min-width: 100%; /* Largeur Image */
-        box-sizing: border-box; /* Inclut les bordures et les marges dans la largeur */
-    }
-  
-/* Animation de défilement automatique */
-    .carousel-slide img {
-        width: 100%; /* Espace occupé dans le cadre */
-        height: auto; /* Hauteur automatique */
-        border-radius: 10px; /* Coins arrondis */
-    }
-    
-    
-/* Animation de défilement automatique */
-    @keyframes slideAnimation {
-        0%, 20% { transform: translateX(0); }      /* Image 1 affichée */
-        25%, 40% { transform: translateX(-100%); } /* Image 2 affichée */
-        45%, 60% { transform: translateX(-200%); } /* Image 3 affichée */
-        65%, 80% { transform: translateX(-300%); } /* Image 4 affichée */
-        85%, 100% { transform: translateX(-400%); } /* Image 5 affichée */
-    }
+._flyouts_558sn_37 a {
+    margin: 10px;
+}
+
+._flyouts_558sn_37 img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Contact */
+.essaie {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    padding: 20px;
+    text-align: center;
+}
+
+.essaie nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.essaie nav li {
+    margin: 10px 0;
+}
+
+.essaie nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}

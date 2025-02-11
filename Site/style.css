@@ -7,13 +7,13 @@ body, html {
 /*Spécifique au bandeau principal */
     .bandeau_entête {
         width: 100%;  /* Largeur totale */
-        height: 70px; /* Hauteur du bandeau (modifiable) */
+        height: 100px; /* Hauteur du bandeau (modifiable) */
         background-color: rgb(0, 0, 126); /* Couleur du fond */
         color: orange; /* Couleur du texte */
         display: flex; /* Active le flexbox */
         align-items: center; /* Centre verticalement */
         justify-content: center; /* Centre horizontalement */
-        font-size: 15px; /* Taille du texte */
+        font-size: 20px; /* Taille du texte */
     }
 
 
@@ -22,18 +22,18 @@ body, html {
 
 /*Spécifique au bandeau avec le menu à l'interieur */
     .bandeau {
-        background-color: #ff0000 ; /* Couleur du fond */
+        background-color: rgb(0, 0, 126) ; /* Couleur du fond */
         display: flex; /* Active Flexbox */
         align-items: center; /* Centre verticalement */
         width: 100%;  /* Largeur totale */
-        height: 98px; /* Hauteur du bandeau (modifiable) */
+        height: 150px; /* Hauteur du bandeau (modifiable) */
     }
 
 
 /*Spécifique au logo du bandeau */
     .logo {
         display: flex; /* Active Flexbox */
-        margin-top: 4px; /* Décale le menu vers le bas */
+        margin-top: -10px; /* Décale le menu vers le bas */
         margin-left: 40px; /* Marge à gauche */
     }
 
@@ -52,7 +52,7 @@ body, html {
 
 /*Spécifique aux liens du menu <a> */
     .menu_deroulant a { 
-        color: black; /* Change la couleur des liens */
+        color: orange; /* Change la couleur des liens */
         font-size: 25px; /* Taille du texte */
         padding: 10px; /* Ajoute de l'espace intérieur en haut et en bas du menu */
         
@@ -71,7 +71,7 @@ body, html {
     .sous-menu {
         display: none; /* Caché par défaut */
         position: absolute;
-        background-color: white;
+        background-color: rgb(0, 255, 132);
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /*0px = Pas de décalage horizontal 4px = Ombre vers le bas 8px = Flou de l'ombre rgba(0, 0, 0, 0.2) = Ombre noire transparente à 20%.*/
         list-style: none; /* supprime les puces des listes */
         width: 200%;  /* Largeur totale */
@@ -137,8 +137,8 @@ body, html {
     .defilant {
         white-space: nowrap; /* Empêche le texte de revenir à la ligne */
         animation: defilement 30s linear infinite; /* Animation/Durée du texte */
-        font-size: 17px; /* Taille du texte */
-        margin-top: 8px; /* Décale le menu vers le bas */
+        font-size: 20px; /* Taille du texte */
+        margin-top: 4px; /* Décale le menu vers le bas */
         width: max-content; /* Ajuste automatiquement à la taille du contenu */
     }
 
@@ -167,7 +167,7 @@ body, html {
 
 /* Container du Carousel */
     .carousel-container {
-        width: 50% ;
+        width: 40% ;
         margin: 10px auto; /* Marge de 20px en haut et en bas et centré horizontalement */
         overflow: hidden; /* Cache les éléments qui dépassent */
         position: relative; /* Position relative */

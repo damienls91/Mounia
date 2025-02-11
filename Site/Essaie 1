@@ -3,12 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="Exemple.css">
+		<link rel="stylesheet" href="Essaie 1.css">
 		<title>Présentation</title>
 	</head>
 	<body>
 
-	</div>
 	<!-- Bandeau Principal -->
 		<div class="bandeau_entête"> 
 			<h1> La Cybersécurité : Une nécessité à notre ère </h1>
@@ -20,7 +19,8 @@
 			<!-- logo -->
 				<div class="logo">
     				<figure>
-       					<img src="https://cybervictime.net/wp-content/uploads/2020/09/Cybervictime.net_.gif" alt="Image" height="90" width="140">
+       					<img src="../Photo/logo.jpg" alt="Image" height="48" width="50">
+       					<img src="../Photo/logo.jpg" alt="Image" height="65" width="65">
     				</figure>
 				</div>
 
@@ -98,7 +98,7 @@
 	        </div>
     	</div>
 	</div>
-	
+
 
 	<ul class="_flyouts_558sn_37"  data-auto-id="main-menu">
 			<a href="CV/Bilel_cv.html"  target="_blank" >
@@ -130,7 +130,6 @@
 		</nav>
     </div>
 
-	
+
 	</body>
 	</html>
-	aria-haspopup="true"
