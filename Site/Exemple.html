@@ -4,14 +4,20 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="Exemple.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 		<title>Présentation</title>
+		    <!-- Inclure jQuery et Bootstrap JavaScript -->
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+			
 	</head>
 	<body>
 
 	</div>
 	<!-- Bandeau Principal -->
 		<div class="bandeau_entête"> 
-			<h1> La Cybersécurité : Une nécessité à notre ère </h1>
+			<h2> La cybersécurité n'est pas une option mais une nécessité dans un monde connecté </h2>
 		</div>
 
 	<!-- Bandeau avec menu -->
@@ -20,44 +26,39 @@
 			<!-- logo -->
 				<div class="logo">
     				<figure>
-       					<img src="https://cybervictime.net/wp-content/uploads/2020/09/Cybervictime.net_.gif" alt="Image" height="90" width="140">
+       					<img src="https://cybervictime.net/wp-content/uploads/2020/09/Cybervictime.net_.gif" alt="Image" height="130" width="200">
     				</figure>
 				</div>
 
 			<!-- menu -->
-        		<nav class="menu_deroulant">  
-					<ul> 
-							<!-- sous_menu_1 -->
-						<li>   
-							<a href="#">Nos Employés</a>
-							<ul class="sous-menu">
-								<li><a href="CV/Ferhat_cv.html"  target="_blank" > M BELLABAS Ferhat</li>
-								<li><a href="CV/Bilel_cv.html"  target="_blank" > M GARBOUZ Bilel</li>
-								<li><a href="CV/Dame_cv.html"  target="_blank" > M FALL Dame</li>
-								<li><a href="CV/Mounia_cv.html"  target="_blank" > Mme JLAIFA Mounia</li>
-								<li><a href="CV/Damien_cv.html"  target="_blank" > M LAMARRE Damien</li>
-							</ul>
-						</li> 
-							<!-- sous_menu_2 -->
-						<li>   
-							<a href="#">Mail</a>
-							<ul class="sous-menu">
-								<li><a href="#">Option 1</a></li>
-								<li><a href="#">123 2vhvcshvsuv</a></li>
-								<li><a href="#">Option 3</a></li>
-							</ul>
-						</li> 
-							<!-- sous_menu_3 -->
-						<li>   
-							<a href="#">LinkedIn</a>
-							<ul class="sous-menu">
-								<li><a href="#"> 1</a></li>
-								<li><a href="#">Option 2</a></li>
-								<li><a href="#">Option 3</a></li>
-							</ul>
-						</li> 
-					</ul>
-        		</nav>
+        		
+			<div class="les_menus">
+				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+					<div class="container-fluid">
+						<a class="nav-link" href="Essaie1.html">Accueil</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						  <li class="nav-item">
+							<a class="nav-link" href="#" target="_blank">Nos Employés</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#" target="_blank">Link</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#" target="_blank">Autres</a>
+						  </li>
+						</ul>
+						<form class="d-flex" role="search">
+						  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						  <button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					  </div>
+					</div>
+		 	  </nav>
+			</div>
 		</div>
 
 	<!-- Bandeau Défile -->
@@ -130,7 +131,5 @@
 		</nav>
     </div>
 
-	
+
 	</body>
-	</html>
-	aria-haspopup="true"

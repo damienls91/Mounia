@@ -1,179 +1,171 @@
-body {
-    background-image: url('images/background.jpg'); /* Chemin vers votre image */
-    background-size: cover; /* Couvre toute la page */
-    background-repeat: no-repeat; /* Ne répète pas l'image */
-    background-attachment: fixed; /* L'image reste fixe lors du défilement */
-    background-position: center; /* Centre l'image */
-    color: #fff; /* Couleur du texte pour s'assurer qu'il est lisible */
-    font-family: 'Arial', sans-serif; /* Police de caractères */
-    margin: 0;
-    padding: 0;
+body, html {
+    margin: 0; /*supprime les marges sur les coté */
+    padding: 0; /*supprime les marges en haut et en bas */
 }
 
-/* Bandeau Principal */
-.bandeau_entête {
-    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
-    padding: 20px;
-    text-align: center;
+
+/*Spécifique au bandeau principal */
+    .bandeau_entête {
+        width: 100%;  /* Largeur totale */
+        height: 100px; /* Hauteur du bandeau (modifiable) */
+        background-color: rgb(0, 0, 126); /* Couleur du fond */
+        color: orange; /* Couleur du texte */
+        display: flex; /* Active le flexbox */
+        align-items: center; /* Centre verticalement */
+        justify-content: center; /* Centre horizontalement */
+        font-size: 20px; /* Taille du texte */
+    }
+
+
+                                        /*CATHEGORIE SUIVANTE/*
+
+
+/*Spécifique au bandeau avec le menu à l'interieur */
+    .bandeau {
+        background-color: rgb(0, 0, 126) ; /* Couleur du fond */
+        display: flex; /* Active Flexbox */
+        align-items: center; /* Centre verticalement */
+        width: 100%;  /* Largeur totale */
+        height: 150px; /* Hauteur du bandeau (modifiable) */
+    }
+
+
+/*Spécifique au logo du bandeau */
+    .logo {
+        display: flex; /* Active Flexbox */
+        margin-top: -10px; /* Décale le menu vers le bas */
+        margin-left: 40px; /* Marge à gauche */
+    }
+
+
+    .les_menus {
+        display: flex; /* Active le flexbox */
+        justify-content: center; /* Centre horizontalement les éléments du menu */
+        font-size: 20px; /* Taille du texte */
+        margin-left: 200px; /* Marge à gauche */
+    }
+
+    .nav-item {
+        margin-right: 20px; /* Espacement entre les éléments du menu */
+    }
+
+    /* Spécifique à la barre de navigation */
+    .navbar-nav .nav-link {
+        color: orange; /* Change la couleur du texte des liens de navigation */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: red; /* Change la couleur du texte des liens de navigation au survol */
+    }
+
+
+                                        /*CATHEGORIE SUIVANTE/*
+
+
+/*Spécifique Bandeau qui défile */
+    .bandeau_défile {
+    height: 50px; /* Hauteur du bandeau (modifiable) */
+    background-color: #333333; /* Couleur du fond */
+    color: orange; /* Couleur du texte */
+    display: flex; /* Active le flexbox */
+    align-items: center; /* Centre verticalement */
+    font-family: 'Arial', sans-serif; /* Type de police */
+    font-weight: bold; /* Texte en gras */
+    margin-left: 40px; /* Marge à gauche */
+    margin-right: 40px; /* Marge à droite */
+    margin-top: 5px; /* Décale le menu vers le bas */
+    padding-left: 40px; /* Décale le texte à 40px du bord gauche du bandeau */
+    }
+
+
+    /* Spécifique au texte BREAKING NEWS */
+.bandeau_défile h2 {
+    font-weight: bold; /* Met le texte en gras */
+    font-size: 25px; /* Taille du texte */
+    margin-top: 8px; /* Décale le menu vers le bas */
 }
 
-/* Bandeau avec menu */
-.bandeau {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
-    padding: 10px 20px;
-}
+/*Spécifique symbole du Bandeau qui défile */
+    .symbole {
+        margin-left: 10px; /* Marge à gauche */
+    }
 
-/* Logo */
-.logo img {
-    height: 90px;
-    width: 140px;
-}
 
-/* Menu déroulant */
-.menu_deroulant ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.menu_deroulant li {
-    position: relative;
-    margin: 0 15px;
-}
-
-.menu_deroulant a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.sous-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 10px;
-    list-style: none;
-}
-
-.menu_deroulant li:hover .sous-menu {
-    display: block;
-}
-
-.sous-menu li {
-    margin: 0;
-}
-
-.sous-menu a {
-    padding: 10px;
-}
-
-/* Bandeau Défile */
-.bandeau_défile {
-    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
-    padding: 10px;
-    text-align: center;
-}
-
+/*Spécifique à la zone avec le texte défile */
 .zone-texte {
-    width: 100%;
-    overflow: hidden;
+    width: 1130px;  /* Largeur fixe de 1800 pixels */
+    height: 30px;  /* Hauteur fixe de 30 pixels */
+    overflow: hidden; /* Cache le texte qui dépasse */ 
 }
 
-.defilant {
-    display: inline-block;
-    white-space: nowrap;
-    animation: defilement 30s linear infinite;
-}
 
-@keyframes defilement {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
+/*Spécifique au texte qui défile */
+    .defilant {
+        white-space: nowrap; /* Empêche le texte de revenir à la ligne */
+        animation: defilement 30s linear infinite; /* Animation/Durée du texte */
+        font-size: 16px; /* Taille du texte */
+        margin-top: 4px; /* Décale le menu vers le bas */
+        width: max-content; /* Ajuste automatiquement à la taille du contenu */
+    }
 
-/* Carrousel */
-.carousel-container {
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    width: 80%;
-}
 
-.carousel-slide_Global {
-    display: flex;
-    animation: slideAnimation 30s linear infinite;
-}
+/*Spécifique au lien du texte */
+    .defilant a { 
+        color: orange; /* Change la couleur des liens */
+        text-decoration: none; /* Enlève le soulignement des liens */
+        margin-right: 110px; /* espacement entre les liens */
+    }
 
-.carousel-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
 
-.carousel-slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
+/*Spécifique à l'orientation du défilement du texte  */
+    @keyframes defilement {
+       0% {
+            transform: translateX(100%); /* Commence à droite */
+        }
+        100% {
+            transform: translateX(-100%); /* Termine à gauche */
+        }
+    }
 
-@keyframes slideAnimation {
-    0%, 20% { transform: translateX(0); }
-    25%, 40% { transform: translateX(-100%); }
-    45%, 60% { transform: translateX(-200%); }
-    65%, 80% { transform: translateX(-300%); }
-    85%, 100% { transform: translateX(-400%); }
-}
+    
+                                        /*CATHEGORIE SUIVANTE/*
 
-/* Galerie d'Images */
-._flyouts_558sn_37 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
 
-._flyouts_558sn_37 a {
-    margin: 10px;
-}
-
-._flyouts_558sn_37 img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Section Contact */
-.essaie {
-    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
-    padding: 20px;
-    text-align: center;
-}
-
-.essaie nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.essaie nav li {
-    margin: 10px 0;
-}
-
-.essaie nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Footer */
-footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-}
+/* Container du Carousel */
+    .carousel-container {
+        width: 40% ;
+        margin: 10px auto; /* Marge de 20px en haut et en bas et centré horizontalement */
+        overflow: hidden; /* Cache les éléments qui dépassent */
+        position: relative; /* Position relative */
+        border-radius: 10px; /* Coins arrondis */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+    
+/* Conteneur des slides */
+    .carousel-slide_Global {
+        display: flex; /* Active le flexbox */
+        animation: slideAnimation 30s linear infinite; /* Durée totale de l'animation */
+    }
+    
+/* Chaque slide */
+    .carousel-slide {
+        min-width: 100%; /* Largeur Image */
+        box-sizing: border-box; /* Inclut les bordures et les marges dans la largeur */
+    }
+  
+/* Animation de défilement automatique */
+    .carousel-slide img {
+        width: 100%; /* Espace occupé dans le cadre */
+        height: auto; /* Hauteur automatique */
+        border-radius: 10px; /* Coins arrondis */
+    }
+    
+    
+/* Animation de défilement automatique */
+    @keyframes slideAnimation {
+        0%, 20% { transform: translateX(0); }      /* Image 1 affichée */
+        25%, 40% { transform: translateX(-100%); } /* Image 2 affichée */
+        45%, 60% { transform: translateX(-200%); } /* Image 3 affichée */
+        65%, 80% { transform: translateX(-300%); } /* Image 4 affichée */
+        85%, 100% { transform: translateX(-400%); } /* Image 5 affichée */
+    }
