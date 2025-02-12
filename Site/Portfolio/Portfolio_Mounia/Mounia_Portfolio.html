@@ -1,0 +1,298 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Mounia</title>
+    <link rel="stylesheet" href="portfolio0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+	
+	    <style>
+		/* Styles généraux */
+body {
+    background-color: #333; /* Couleur de fond gris sombre */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Couleur de la police */
+    overflow: hidden; /* Empêcher le défilement vertical */
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Hauteur de la fenêtre */
+}
+
+/* Bouton Retour */
+.back-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px; /* Réduire la taille de la police */
+    color: #fff;
+    background-color: #e40909;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: #f70808;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #f50505; /* Couleur de fond de l'en-tête */
+    color: #fff; /* Couleur de la police de l'en-tête */
+    border-bottom: 5px solid #f80808; /* Bordure en bas de l'en-tête */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    flex: 0 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em; /* Réduire la taille de la police */
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 0.9em; /* Réduire la taille de la police */
+}
+
+/* Section projets */
+.projects {
+    padding: 0;
+    background-color: #333; /* Couleur de fond gris sombre */
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects h2 {
+    text-align: center;
+    color: #fff; /* Couleur de la police */
+    margin-bottom: 10px;
+    font-size: 1.3em; /* Réduire la taille de la police */
+    border-bottom: 2px solid #fff; /* Couleur de la bordure */
+    padding-bottom: 5px;
+}
+
+/* Carrousel */
+.carousel {
+    width: 100%;
+    height: 60vh; /* Ajuster la hauteur de la fenêtre */
+    margin: 0 auto;
+}
+
+.project {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%; /* Largeur de l'image */
+    height: 100%;
+    max-height: 450px; /* Hauteur maximale des images */
+    object-fit: contain; /* Couvrir toute la zone sans déformer l'image */
+    border-radius: 8px; /* Coins arrondis pour les images */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: #fff; /* Couleur du texte */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h3 {
+    font-size: 1.8em; /* Réduire la taille de la police */
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 1em; /* Réduire la taille de la police */
+    margin: 10px 0 0;
+}
+
+/* Section about */
+.about {
+    padding: 20px;
+    text-align: center;
+    background-color: #444; /* Couleur de fond légèrement plus claire */
+    color: #fff; /* Couleur de la police */
+    flex: 0 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.8em;
+    }
+
+    .projects h2 {
+        font-size: 1.2em;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 50vh; /* Ajuster la hauteur de la fenêtre */
+    }
+
+    .project {
+        height: 50vh; /* Ajuster la hauteur de la fenêtre */
+    }
+
+    .overlay h3 {
+        font-size: 1.5em;
+    }
+
+    .overlay p {
+        font-size: 0.9em;
+    }
+
+    .back-button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header p {
+        font-size: 0.7em;
+    }
+
+    .projects h2 {
+        font-size: 1em;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 40vh; /* Ajuster la hauteur de la fenêtre */
+    }
+
+    .project {
+        height: 40vh; /* Ajuster la hauteur de la fenêtre */
+    }
+
+    .overlay h3 {
+        font-size: 1.2em;
+    }
+
+    .overlay p {
+        font-size: 0.8em;
+    }
+
+    .back-button {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+}
+		    </style>
+</head>
+<body>
+    <button onclick="location.href='Axel.html'" class="back-button">Retour</button>
+    <header>
+        <h1>Mounia Jlaifa </h1>
+        <p>Développeuse Web et Technicienne Informatique</p>
+    </header>
+    <main>
+        <section class="projects">
+            <h2>Projets</h2>
+            <div class="carousel">
+                <div class="project">
+                    <div class="overlay">
+                        <h3>Monument français</h3>
+                        <p>Montmartre</p>
+                    </div>
+                    <img src="IMG_2043.jpg" alt="Projet ">
+                </div>
+                <div class="project">
+                    <div class="overlay">
+                        <h3>Art Marocain</h3>
+                        <p>L'art marocain est riche et diversifié, reflétant l'histoire et la culture du pays, chaque œuvre raconte une histoire unique.</p>
+                    </div>
+                    <img src="image1.jpg" alt="Projet ">
+                </div>
+                <div class="project">
+                    <div class="overlay">
+                        <h3>Art Marocain</h3>
+                        <p>L'art marocain est riche et diversifié, reflétant l'histoire et la culture du pays, chaque œuvre raconte une histoire unique.</p>
+                    </div>
+                    <img src="image2.jpg" alt="Projet ">
+                </div>
+                <div class="project">
+                    <div class="overlay">
+                        <h3>Art Marocain</h3>
+                        <p>L'art marocain est riche et diversifié, reflétant l'histoire et la culture du pays, chaque œuvre raconte une histoire unique.</p>
+                    </div>
+                    <img src="image3.jpg" alt="Projet ">
+                </div>
+                <div class="project">
+                    <div class="overlay">
+                        <h3>Art Marocain</h3>
+                        <p>L'art marocain est riche et diversifié, reflétant l'histoire et la culture du pays, chaque œuvre raconte une histoire unique.</p>
+                    </div>
+                    <img src="image4.jpg" alt="Projet ">
+                </div>
+                <div class="project">
+                    <div class="overlay">
+                        <h3>Art Marocain</h3>
+                        <p>L'art marocain est riche et diversifié, reflétant l'histoire et la culture du pays, chaque œuvre raconte une histoire unique.</p>
+                    </div>
+                    <img src="image5.jpg" alt="projet">
+                </div>
+                <div class="project">
+                    <div class="overlay">
+                        <h3>Roman Policier de Freida McFadden</h3>
+                        <p>La femme de ménage.</p>
+                    </div>
+                    <img src="image6.jpg" alt="projet">
+                </div>
+        </section>
+        <section class="about">
+            <p>Visite aux musées.</p>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+</body>
+</html>
