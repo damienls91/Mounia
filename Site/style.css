@@ -38,64 +38,24 @@ body, html {
     }
 
 
-/*Spécifique au liens du menu du bandeau */
-    .menu_deroulant {
+    .les_menus {
         display: flex; /* Active le flexbox */
         justify-content: center; /* Centre horizontalement les éléments du menu */
-        margin-top: 10px; /* Décale le menu vers le bas */
-        font-size: 30px; /* Taille du texte */
-        font-family: 'Arial', sans-serif; /* Type de police */
-        font-weight: bold; /* Texte en gras */
+        font-size: 20px; /* Taille du texte */
+        margin-left: 200px; /* Marge à gauche */
     }
 
-
-
-/*Spécifique aux liens du menu <a> */
-    .menu_deroulant a { 
-        color: orange; /* Change la couleur des liens */
-        font-size: 25px; /* Taille du texte */
-        padding: 10px; /* Ajoute de l'espace intérieur en haut et en bas du menu */
-        
+    .nav-item {
+        margin-right: 20px; /* Espacement entre les éléments du menu */
     }
 
-
-/*Spécifique aux  menu */
-    .menu_deroulant li { 
-        display: inline-block; /* Mets les 3 menu sur la meme ligne  */
-        position: relative; 
-        margin-left: 100px;
+    /* Spécifique à la barre de navigation */
+    .navbar-nav .nav-link {
+        color: orange; /* Change la couleur du texte des liens de navigation */
     }
 
-
-/*Spécifique aux sous menu */
-    .sous-menu {
-        display: none; /* Caché par défaut */
-        position: absolute;
-        background-color: rgb(106, 106, 106);
-        box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.4); /*0px = Pas de décalage horizontal 4px = Ombre vers le bas 8px = Flou de l'ombre rgba(0, 0, 0, 0.2) = Ombre noire transparente à 20%.*/
-        list-style: none; /* supprime les puces des listes */
-        width: 200%;  /* Largeur totale */
-        height: 350px; /* Hauteur du bandeau (modifiable) */
-        padding-top: 10% ; /*Ajoute de l'espace intérieur en haut et en bas du sous-menu*/
-        z-index: 1000; /* 🔥 Assure que le sous-menu est au premier plan */
-        }
-    
-    
-/*Spécifique aux sous menu */
-    .sous-menu li {
-        display: block ; /*pour affiché le sous menu en block: Comme une liste*/
-        left: -75px; /* Alignement à gauche */
-    }
-    
-    
-/* Spécifique à l'affichage des sous menus */
-    .menu_deroulant li:hover .sous-menu {
-        display: block;
-    }
-
-
-    .sous-menu:hover {
-        display: block;
+    .navbar-nav .nav-link:hover {
+        color: red; /* Change la couleur du texte des liens de navigation au survol */
     }
 
 
@@ -118,6 +78,13 @@ body, html {
     }
 
 
+    /* Spécifique au texte BREAKING NEWS */
+.bandeau_défile h2 {
+    font-weight: bold; /* Met le texte en gras */
+    font-size: 25px; /* Taille du texte */
+    margin-top: 8px; /* Décale le menu vers le bas */
+}
+
 /*Spécifique symbole du Bandeau qui défile */
     .symbole {
         margin-left: 10px; /* Marge à gauche */
@@ -126,7 +93,7 @@ body, html {
 
 /*Spécifique à la zone avec le texte défile */
 .zone-texte {
-    width: 1151px;  /* Largeur fixe de 1800 pixels */
+    width: 1130px;  /* Largeur fixe de 1800 pixels */
     height: 30px;  /* Hauteur fixe de 30 pixels */
     overflow: hidden; /* Cache le texte qui dépasse */ 
 }
@@ -136,7 +103,7 @@ body, html {
     .defilant {
         white-space: nowrap; /* Empêche le texte de revenir à la ligne */
         animation: defilement 30s linear infinite; /* Animation/Durée du texte */
-        font-size: 20px; /* Taille du texte */
+        font-size: 16px; /* Taille du texte */
         margin-top: 4px; /* Décale le menu vers le bas */
         width: max-content; /* Ajuste automatiquement à la taille du contenu */
     }
@@ -170,7 +137,7 @@ body, html {
         margin: 10px auto; /* Marge de 20px en haut et en bas et centré horizontalement */
         overflow: hidden; /* Cache les éléments qui dépassent */
         position: relative; /* Position relative */
-        border-radius: 10px;
+        border-radius: 10px; /* Coins arrondis */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     }
     
