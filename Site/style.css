@@ -169,3 +169,80 @@ body, html {
         65%, 80% { transform: translateX(-300%); } /* Image 4 affichée */
         85%, 100% { transform: translateX(-400%); } /* Image 5 affichée */
     }
+
+   
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Photo_Equipe {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .team {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 80px; /* Espacement entre les éléments */
+    }
+    
+    /* ✅ Agrandissement des cadres */
+    .employee {
+        background:  rgb(1, 1, 162);
+        padding: 30px; /* Espace intérieur */
+        border-radius: 15px; /* Coins arrondis */
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        text-align: center; /* Centrage du texte */
+        width: 300px; /* Plus large */
+        transition: transform 0.3s ease-in-out; /* Transition fluide */
+    }
+    
+    .employee:hover {
+        transform: scale(1.10); /* Agrandissement au survol */
+    }
+    
+    /* ✅ Agrandissement des photos */
+    .photo {
+        width: 170px; /* Augmentation de la taille */
+        height: 170px; /* Augmentation de la taille */
+        border-radius: 70%; /* Forme ronde */
+        overflow: hidden; /* Cache les éléments qui dépassent */
+        border: 5px solid orange; /* Bordure orange */
+        margin: 0 auto 15px; /* Marge en bas */
+    }
+    
+    .photo img {
+        width: 100%; /* Remplissage complet */
+        height: 100%; /* Remplissage complet */
+        object-fit: cover; /* Remplissage complet */
+    }
+    
+    h3 {
+        margin: 10px 0 5px; /* Marge en bas */
+        color: orange; /* Couleur orange */
+        font-size: 18px; /* Taille du texte */
+    }
+    
+    /* Optionnel : Changer la couleur des liens au survol */
+    .employee a {
+        color: red;
+        font-size: 18px;
+        display: block ; /*pour affiché le sous menu en block: Comme une liste*/
+    }
+
+    /* Optionnel : Changer la couleur des liens au survol */
+    .employee a:hover {
+        color: yellow;
+        font-size: 20px;
+       }
