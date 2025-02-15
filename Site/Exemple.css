@@ -99,9 +99,9 @@ nav ul li a:hover {
 .service {
     background: linear-gradient(45deg, #001f3f, #ff4500);
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 10px; 
     width: 250px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; 
 }
 
 .service:hover {

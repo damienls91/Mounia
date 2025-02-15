@@ -177,22 +177,16 @@ body, html {
 
    
     
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
+
     
     .Photo_Equipe {
         width: 80%;
         margin: 20px auto;
+        margin-top: 80px;
     }
     
     h1 {
-        color: #333;
-        margin-bottom: 20px;
+        color: rgb(0, 0, 0);
     }
     
     .team {
@@ -209,6 +203,7 @@ body, html {
         border-radius: 15px; /* Coins arrondis */
         box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
         text-align: center; /* Centrage du texte */
+        margin-top: 30px;
         width: 300px; /* Plus large */
         transition: transform 0.3s ease-in-out; /* Transition fluide */
     }
