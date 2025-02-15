@@ -1,171 +1,151 @@
-body, html {
-    margin: 0; /*supprime les marges sur les coté */
-    padding: 0; /*supprime les marges en haut et en bas */
+/* 🌑 Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: #fff;
 }
 
-
-/*Spécifique au bandeau principal */
-    .bandeau_entête {
-        width: 100%;  /* Largeur totale */
-        height: 100px; /* Hauteur du bandeau (modifiable) */
-        background-color: rgb(0, 0, 126); /* Couleur du fond */
-        color: orange; /* Couleur du texte */
-        display: flex; /* Active le flexbox */
-        align-items: center; /* Centre verticalement */
-        justify-content: center; /* Centre horizontalement */
-        font-size: 20px; /* Taille du texte */
-    }
-
-
-                                        /*CATHEGORIE SUIVANTE/*
-
-
-/*Spécifique au bandeau avec le menu à l'interieur */
-    .bandeau {
-        background-color: rgb(0, 0, 126) ; /* Couleur du fond */
-        display: flex; /* Active Flexbox */
-        align-items: center; /* Centre verticalement */
-        width: 100%;  /* Largeur totale */
-        height: 150px; /* Hauteur du bandeau (modifiable) */
-    }
-
-
-/*Spécifique au logo du bandeau */
-    .logo {
-        display: flex; /* Active Flexbox */
-        margin-top: -10px; /* Décale le menu vers le bas */
-        margin-left: 40px; /* Marge à gauche */
-    }
-
-
-    .les_menus {
-        display: flex; /* Active le flexbox */
-        justify-content: center; /* Centre horizontalement les éléments du menu */
-        font-size: 20px; /* Taille du texte */
-        margin-left: 200px; /* Marge à gauche */
-    }
-
-    .nav-item {
-        margin-right: 20px; /* Espacement entre les éléments du menu */
-    }
-
-    /* Spécifique à la barre de navigation */
-    .navbar-nav .nav-link {
-        color: orange; /* Change la couleur du texte des liens de navigation */
-    }
-
-    .navbar-nav .nav-link:hover {
-        color: red; /* Change la couleur du texte des liens de navigation au survol */
-    }
-
-
-                                        /*CATHEGORIE SUIVANTE/*
-
-
-/*Spécifique Bandeau qui défile */
-    .bandeau_défile {
-    height: 50px; /* Hauteur du bandeau (modifiable) */
-    background-color: #333333; /* Couleur du fond */
-    color: orange; /* Couleur du texte */
-    display: flex; /* Active le flexbox */
-    align-items: center; /* Centre verticalement */
-    font-family: 'Arial', sans-serif; /* Type de police */
-    font-weight: bold; /* Texte en gras */
-    margin-left: 40px; /* Marge à gauche */
-    margin-right: 40px; /* Marge à droite */
-    margin-top: 5px; /* Décale le menu vers le bas */
-    padding-left: 40px; /* Décale le texte à 40px du bord gauche du bandeau */
-    }
-
-
-    /* Spécifique au texte BREAKING NEWS */
-.bandeau_défile h2 {
-    font-weight: bold; /* Met le texte en gras */
-    font-size: 25px; /* Taille du texte */
-    margin-top: 8px; /* Décale le menu vers le bas */
+/* 🔥 HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(45deg, #ff4500, #ff0000);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/*Spécifique symbole du Bandeau qui défile */
-    .symbole {
-        margin-left: 10px; /* Marge à gauche */
-    }
-
-
-/*Spécifique à la zone avec le texte défile */
-.zone-texte {
-    width: 1130px;  /* Largeur fixe de 1800 pixels */
-    height: 30px;  /* Hauteur fixe de 30 pixels */
-    overflow: hidden; /* Cache le texte qui dépasse */ 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
-/*Spécifique au texte qui défile */
-    .defilant {
-        white-space: nowrap; /* Empêche le texte de revenir à la ligne */
-        animation: defilement 30s linear infinite; /* Animation/Durée du texte */
-        font-size: 16px; /* Taille du texte */
-        margin-top: 4px; /* Décale le menu vers le bas */
-        width: max-content; /* Ajuste automatiquement à la taille du contenu */
-    }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
+nav ul li a:hover {
+    color: #ffcc00;
+}
 
-/*Spécifique au lien du texte */
-    .defilant a { 
-        color: orange; /* Change la couleur des liens */
-        text-decoration: none; /* Enlève le soulignement des liens */
-        margin-right: 110px; /* espacement entre les liens */
-    }
+/* 🚀 HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(135deg, #001f3f, #ff4500);
+    text-align: center;
+}
 
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
 
-/*Spécifique à l'orientation du défilement du texte  */
-    @keyframes defilement {
-       0% {
-            transform: translateX(100%); /* Commence à droite */
-        }
-        100% {
-            transform: translateX(-100%); /* Termine à gauche */
-        }
-    }
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
 
-    
-                                        /*CATHEGORIE SUIVANTE/*
+.btn {
+    background: #ffcc00;
+    color: #111;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+}
 
+.btn:hover {
+    background: #ff9900;
+}
 
-/* Container du Carousel */
-    .carousel-container {
-        width: 40% ;
-        margin: 10px auto; /* Marge de 20px en haut et en bas et centré horizontalement */
-        overflow: hidden; /* Cache les éléments qui dépassent */
-        position: relative; /* Position relative */
-        border-radius: 10px; /* Coins arrondis */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+/* ✨ SERVICES */
+.services {
+    text-align: center;
+    padding: 80px 20px;
+    background: #111;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffcc00;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: linear-gradient(45deg, #001f3f, #ff4500);
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.1);
+}
+
+/* 📧 CONTACT */
+.contact {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #3a7f32, #00ff77);
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.btn-alt {
+    background: #001f3f;
+    color: white;
+}
+
+.btn-alt:hover {
+    background: #ff4500;
+}
+
+/* ⚫ FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #888;
+}
+
+/* ✨ ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
     }
-    
-/* Conteneur des slides */
-    .carousel-slide_Global {
-        display: flex; /* Active le flexbox */
-        animation: slideAnimation 30s linear infinite; /* Durée totale de l'animation */
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    
-/* Chaque slide */
-    .carousel-slide {
-        min-width: 100%; /* Largeur Image */
-        box-sizing: border-box; /* Inclut les bordures et les marges dans la largeur */
-    }
-  
-/* Animation de défilement automatique */
-    .carousel-slide img {
-        width: 100%; /* Espace occupé dans le cadre */
-        height: auto; /* Hauteur automatique */
-        border-radius: 10px; /* Coins arrondis */
-    }
-    
-    
-/* Animation de défilement automatique */
-    @keyframes slideAnimation {
-        0%, 20% { transform: translateX(0); }      /* Image 1 affichée */
-        25%, 40% { transform: translateX(-100%); } /* Image 2 affichée */
-        45%, 60% { transform: translateX(-200%); } /* Image 3 affichée */
-        65%, 80% { transform: translateX(-300%); } /* Image 4 affichée */
-        85%, 100% { transform: translateX(-400%); } /* Image 5 affichée */
-    }
+}

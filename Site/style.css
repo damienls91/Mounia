@@ -13,7 +13,7 @@ body, html {
         display: flex; /* Active le flexbox */
         align-items: center; /* Centre verticalement */
         justify-content: center; /* Centre horizontalement */
-        font-size: 20px; /* Taille du texte */
+        font-size: 22px; /* Taille du texte */
     }
 
 
@@ -85,6 +85,7 @@ body, html {
     margin-top: 8px; /* Décale le menu vers le bas */
 }
 
+
 /*Spécifique symbole du Bandeau qui défile */
     .symbole {
         margin-left: 10px; /* Marge à gauche */
@@ -116,6 +117,10 @@ body, html {
         margin-right: 110px; /* espacement entre les liens */
     }
 
+    .bandeau_défile a:hover {
+        color: yellow;
+        font-size: 17px;
+    }
 
 /*Spécifique à l'orientation du défilement du texte  */
     @keyframes defilement {
