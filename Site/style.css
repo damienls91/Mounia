@@ -16,6 +16,16 @@ body, html {
         font-size: 22px; /* Taille du texte */
     }
 
+    
+    .Photo_Equipe h1{
+    color: orange;
+    }
+/* Ajouter une image en arrière-plan pour le corps de la page */
+body {
+    background: linear-gradient(45deg, #000000, #4b4b4b); /* Dégradé */
+
+}
+
 
                                         /*CATHEGORIE SUIVANTE/*
 
@@ -222,7 +232,7 @@ body, html {
         margin: 0 auto 15px; /* Marge en bas */
     }
     
-    
+
     .photo img {
         width: 100%; /* Remplissage complet */
         height: 100%; /* Remplissage complet */

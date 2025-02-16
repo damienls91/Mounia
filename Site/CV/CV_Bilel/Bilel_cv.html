@@ -4,104 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Bilel</title>
-    <link rel="stylesheet" href="Bilel_CV.css">
-    <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+		
+		 /* Bouton "Retour" personnalisé */
+        .back-button {
+            display: inline-block;
+            margin: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #7f8c8d; /* Gris sobre pour le bouton */
+            border: none;
+            border-radius: 50px; /* Coins arrondis pour un aspect moderne */
+            cursor: pointer;
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            transition: background-color 0.3s ease, transform 0.2s;
+			}
+			
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid #2C3E50;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #2C3E50;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #7F8C8D;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 24px;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2980B9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            background-color: #3498DB;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #BDC3C7;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- HEADER -->
-    <header>
-        <div class="container">
+ <!-- Bouton retour -->
+ <button onclick="location.href='../../Page_Principale.html'" class="back-button">Retour</button>
+	
+    <div class="container">
+        <header>
+            <img src="../CV_Bilel/WhatsApp Image 2025-02-16 à 18.39.42_211e0c40.jpg" alt="Bilel" class="profile-img">
             <h1>Bilel</h1>
-            <p>Développeur Web r</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#experience">Expérience</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#education">Formation</a></li>
-                    <li><a href="#cv">Mon CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <p>Développeur Web</p>
+        </header>
 
-    <!-- SECTION À PROPOS -->
-    <section id="about">
-        <div class="container">
-            <img src="profil.jpg" alt="Jean Dupont">
-            <div>
-                <h2>À propos de moi</h2>
-                <p>Développeur passionné par les technologies web modernes, j'aime créer des applications performantes et intuitives.</p>
-            </div>
-        </div>
-    </section>
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>Développeur web passionné, je me spécialise dans la création d'applications modernes, intuitives et performantes.</p>
+        </section>
 
-    <!-- SECTION EXPÉRIENCE -->
-    <section id="experience">
-        <div class="container">
+        <section id="experience">
             <h2>Expérience professionnelle</h2>
-            <div class="job">
-                <h3>Développeur Web - Agence XYZ</h3>
-                <p>2022 - Aujourd'hui</p>
-                <p>Développement de sites dynamiques et création d'API sécurisées.</p>
-            </div>
-            <div class="job">
-                <h3>UI/UX Designer - Startup ABC</h3>
-                <p>2020 - 2022</p>
-                <p>Création de maquettes et prototypes interactifs.</p>
-            </div>
-        </div>
-    </section>
+            <p>Assistant d’Éducation
+Collège Évariste Galois, Sarcelles / Collège François Truffaut, Gonesse
+Communication avec les élèves et le personnel
+Gestion de l'autorité et de la discipline</p>
 
-    <!-- SECTION COMPÉTENCES -->
-    <section id="skills">
-        <div class="container">
+            <p>Conducteur-livreur</p>
+            <p>Employée polyvalent</p>
+           
+        </section>
+
+        <section id="skills">
             <h2>Compétences</h2>
             <ul>
-                <li>HTML, CSS, JavaScript (React, Vue.js)</li>
-                <li>Node.js, Express, MongoDB</li>
-                <li>UI/UX Design (Figma, Adobe XD)</li>
-                <li>SEO, Performance Web</li>
+                <li>Aisance relationnelle</li>
+                <li>Polyvalence</li>
+                <li>Sens de l'organisation</li>
+				<li>Esprit d'équipe</li>
+				<li>Bureautique : Word, Excel, PowerPoint</li>
+				<li>Notions de base en programmation : HTML, CSS
+et Python</li>
             </ul>
-        </div>
-    </section>
+        </section>
+		<ul>
 
-    <!-- SECTION FORMATION -->
-    <section id="education">
-        <div class="container">
+        <section id="education">
             <h2>Formation</h2>
-            <div class="education-item">
-                <h3>Bachelor en Informatique</h3>
-                <p>Université Paris - 2017-2020</p>
-            </div>
-        </div>
-    </section>
+            <li>Licence en Sciences pour la santé
+Faculté de Santé Bobigny, Bobigny (2020/2023)</li>
+            <li>Baccalauréat Général, spécialité Scientifique
+Lycée La Tourelle, Sarcelles (2017/2020)</li>
+            
+			</ul>
+        </section>
 
-    <!-- SECTION MON CV -->
-    <section id="cv">
-        <div class="container">
+        <section id="cv">
             <h2>Mon CV</h2>
-            <iframe src="cv.pdf" width="100%" height="500px"></iframe>
-            <a href="cv.pdf" download="Jean_Dupont_CV.pdf" class="download-btn">Télécharger le CV</a>
-        </div>
-    </section>
+            <p>Téléchargez mon CV complet en format PDF.</p>
+            <a href="../CV_Bilel/CV_Bilel.pdf" download="Bilel_CV.pdf" class="download-btn">Télécharger le CV</a>
+        </section>
 
-    <!-- SECTION CONTACT -->
-    <section id="contact">
-        <div class="container">
+        <section id="contact">
             <h2>Contactez-moi</h2>
-            <p>Email : <a href="mailto:jean.dupont@email.com">jean.dupont@email.com</a></p>
-            <p>LinkedIn : <a href="https://linkedin.com/in/jeandupont" target="_blank">linkedin.com/in/jeandupont</a></p>
-            <button id="contactBtn">Envoyer un message</button>
-        </div>
-    </section>
+            <p>Email : bilelgarbouz@gmail.com</p>
+			<p>Numéro : 0768957769</p>
+            <p>LinkedIn : <a href="https://linkedin.com/in/bilel" target="_blank">https://www.linkedin.com/in/bilel-garbouz-bb5a15306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app</a></p>
+        </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p> Bilel - Tous droits réservés</p>
-    </footer>
+        
 
 </body>
 </html>
