@@ -207,7 +207,7 @@ body, html {
         width: 300px; /* Plus large */
         transition: transform 0.3s ease-in-out; /* Transition fluide */
     }
-    
+     /* ✅ Agrandissement des cadres */
     .employee:hover {
         transform: scale(1.10); /* Agrandissement au survol */
     }
@@ -221,6 +221,7 @@ body, html {
         border: 5px solid orange; /* Bordure orange */
         margin: 0 auto 15px; /* Marge en bas */
     }
+    
     
     .photo img {
         width: 100%; /* Remplissage complet */
