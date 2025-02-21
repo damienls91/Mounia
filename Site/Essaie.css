@@ -16,6 +16,20 @@ body, html {
         font-size: 22px; /* Taille du texte */
     }
 
+    
+    .Photo_Equipe h1{
+    color: orange;
+    }
+    /* Ajouter une image en arrière-plan pour le corps de la page */
+body {
+    background-image: url('https://www.victrix.ca/wp-content/uploads/2024/10/online-security-dark-background-3d-illustration-scaled.jpg'); /* Chemin vers votre image */
+    background-size: cover; /* Pour couvrir toute la page */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    padding-top: 100px;
+    height: 50px;
+}
+
 
                                         /*CATHEGORIE SUIVANTE/*
 
@@ -175,26 +189,18 @@ body, html {
         85%, 100% { transform: translateX(-400%); } /* Image 5 affichée */
     }
 
-
-                                        /*CATHEGORIE SUIVANTE*/
    
     
-    .bandeau_Equipe {
-        width: 100%;  /* Largeur totale */
-        background: linear-gradient(45deg, rgb(63, 63, 63), rgb(163, 67, 2));
-        display: flex; /* Active le flexbox */
-        align-items: center; /* Centre verticalement */
-        justify-content: center; /* Centre horizontalement */
-        margin-top: 30px; /* Marge en haut */
-    }
+
     
     .Photo_Equipe {
         width: 80%;
         margin: 20px auto;
+        margin-top: 80px;
     }
     
     h1 {
-        color: orange;
+        color: rgb(0, 0, 0);
     }
     
     .team {
@@ -215,7 +221,7 @@ body, html {
         width: 300px; /* Plus large */
         transition: transform 0.3s ease-in-out; /* Transition fluide */
     }
-    
+     /* ✅ Agrandissement des cadres */
     .employee:hover {
         transform: scale(1.10); /* Agrandissement au survol */
     }
@@ -230,6 +236,7 @@ body, html {
         margin: 0 auto 15px; /* Marge en bas */
     }
     
+
     .photo img {
         width: 100%; /* Remplissage complet */
         height: 100%; /* Remplissage complet */
