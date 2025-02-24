@@ -1,10 +1,10 @@
 body, html {
     margin: 0; /*supprime les marges sur les coté */
     padding: 0; /*supprime les marges en haut et en bas */
-}
+    }
 
 
-/*Spécifique au bandeau principal */
+    /*Spécifique au bandeau principal */
     .bandeau_entête {
         width: 100%;  /* Largeur totale */
         height: 100px; /* Hauteur du bandeau (modifiable) */
@@ -16,21 +16,22 @@ body, html {
         font-size: 22px; /* Taille du texte */
     }
 
-    
+    /* Spécifique au texte BREAKING NEWS */
     .Photo_Equipe h1{
     color: orange;
     }
-/* Ajouter une image en arrière-plan pour le corps de la page */
-body {
-    background: linear-gradient(45deg, #000000, #727272); /* Dégradé */
 
-}
+
+    /* Ajouter une image en arrière-plan pour le corps de la page */
+    body {
+    background: linear-gradient(45deg, #7e7d7d, #beb5b5); /* Dégradé */
+    }
 
 
                                         /*CATHEGORIE SUIVANTE/*
 
 
-/*Spécifique au bandeau avec le menu à l'interieur */
+    /*Spécifique au bandeau avec le menu à l'interieur */
     .bandeau {
         background-color: rgb(0, 0, 126) ; /* Couleur du fond */
         display: flex; /* Active Flexbox */
@@ -40,14 +41,14 @@ body {
     }
 
 
-/*Spécifique au logo du bandeau */
+    /*Spécifique au logo du bandeau */
     .logo {
         display: flex; /* Active Flexbox */
         margin-top: -10px; /* Décale le menu vers le bas */
         margin-left: 40px; /* Marge à gauche */
     }
 
-
+    /* Spécifique à la barre de navigation */
     .les_menus {
         display: flex; /* Active le flexbox */
         justify-content: center; /* Centre horizontalement les éléments du menu */
@@ -55,6 +56,7 @@ body {
         margin-left: 200px; /* Marge à gauche */
     }
 
+    /* Spécifique à chaque élément du menu */
     .nav-item {
         margin-right: 20px; /* Espacement entre les éléments du menu */
     }
@@ -64,6 +66,7 @@ body {
         color: orange; /* Change la couleur du texte des liens de navigation */
     }
 
+    /* Spécifique à la barre de navigation au survol */
     .navbar-nav .nav-link:hover {
         color: red; /* Change la couleur du texte des liens de navigation au survol */
     }
@@ -72,7 +75,7 @@ body {
                                         /*CATHEGORIE SUIVANTE/*
 
 
-/*Spécifique Bandeau qui défile */
+    /*Spécifique Bandeau qui défile */
     .bandeau_défile {
     height: 50px; /* Hauteur du bandeau (modifiable) */
     background-color: #333333; /* Couleur du fond */
@@ -89,28 +92,28 @@ body {
 
 
     /* Spécifique au texte BREAKING NEWS */
-.bandeau_défile h2 {
+    .bandeau_défile h2 {
     font-weight: bold; /* Met le texte en gras */
     font-size: 25px; /* Taille du texte */
     margin-top: 8px; /* Décale le menu vers le bas */
-}
+    }
 
 
-/*Spécifique symbole du Bandeau qui défile */
+    /*Spécifique symbole du Bandeau qui défile */
     .symbole {
         margin-left: 10px; /* Marge à gauche */
     }
 
 
-/*Spécifique à la zone avec le texte défile */
-.zone-texte {
+    /*Spécifique à la zone avec le texte défile */
+    .zone-texte {
     width: 1130px;  /* Largeur fixe de 1800 pixels */
     height: 30px;  /* Hauteur fixe de 30 pixels */
     overflow: hidden; /* Cache le texte qui dépasse */ 
-}
+    }
 
 
-/*Spécifique au texte qui défile */
+    /*Spécifique au texte qui défile */
     .defilant {
         white-space: nowrap; /* Empêche le texte de revenir à la ligne */
         animation: defilement 30s linear infinite; /* Animation/Durée du texte */
@@ -120,7 +123,7 @@ body {
     }
 
 
-/*Spécifique au lien du texte */
+    /*Spécifique au lien du texte */
     .defilant a { 
         color: orange; /* Change la couleur des liens */
         text-decoration: none; /* Enlève le soulignement des liens */
@@ -132,7 +135,7 @@ body {
         font-size: 17px;
     }
 
-/*Spécifique à l'orientation du défilement du texte  */
+    /*Spécifique à l'orientation du défilement du texte  */
     @keyframes defilement {
        0% {
             transform: translateX(100%); /* Commence à droite */
@@ -146,7 +149,7 @@ body {
                                         /*CATHEGORIE SUIVANTE/*
 
 
-/* Container du Carousel */
+    /* Container du Carousel */
     .carousel-container {
         width: 40% ;
         margin: 30px auto; /* Marge de 20px en haut et en bas et centré horizontalement */
@@ -156,19 +159,19 @@ body {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     }
     
-/* Conteneur des slides */
+    /* Conteneur des slides */
     .carousel-slide_Global {
         display: flex; /* Active le flexbox */
         animation: slideAnimation 30s linear infinite; /* Durée totale de l'animation */
     }
     
-/* Chaque slide */
+    /* Chaque slide */
     .carousel-slide {
         min-width: 100%; /* Largeur Image */
         box-sizing: border-box; /* Inclut les bordures et les marges dans la largeur */
     }
   
-/* Animation de défilement automatique */
+    /* Animation de défilement automatique */
     .carousel-slide img {
         width: 100%; /* Espace occupé dans le cadre */
         height: auto; /* Hauteur automatique */
@@ -176,7 +179,7 @@ body {
     }
     
     
-/* Animation de défilement automatique */
+    /* Animation de défilement automatique */
     @keyframes slideAnimation {
         0%, 20% { transform: translateX(0); }      /* Image 1 affichée */
         25%, 40% { transform: translateX(-100%); } /* Image 2 affichée */
@@ -233,28 +236,29 @@ body {
         margin: 0 auto 15px; /* Marge en bas */
     }
     
-
+    /* ✅ Agrandissement des photos */
     .photo img {
         width: 100%; /* Remplissage complet */
         height: 100%; /* Remplissage complet */
         object-fit: cover; /* Remplissage complet */
     }
     
+    /* Taille des Nom */
     h3 {
         margin: 10px 0 5px; /* Marge en bas */
         color: orange; /* Couleur orange */
         font-size: 18px; /* Taille du texte */
     }
     
-    /* Optionnel : Changer la couleur des liens au survol */
+    /* Changer la couleur des liens */
     .employee a {
-        color: red;
-        font-size: 18px;
+        color: red; /* Couleur rouge */
+        font-size: 18px; /* Taille du texte */
         display: block ; /*pour affiché le sous menu en block: Comme une liste*/
     }
 
     /* Optionnel : Changer la couleur des liens au survol */
     .employee a:hover {
-        color: yellow;
-        font-size: 20px;
+        color: yellow; /* Couleur jaune */
+        font-size: 20px; /* Taille du texte */
        }
