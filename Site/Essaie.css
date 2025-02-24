@@ -16,15 +16,6 @@ body, html {
         font-size: 22px; /* Taille du texte */
     }
 
-
-    .search-input {
-        width: 300px; /* Largeur de la zone de texte */
-        height: 40px; /* Hauteur de la zone de texte */
-        font-size: 16px; /* Taille du texte */
-        padding: 10px; /* Padding intérieur */
-        border-radius: 5px; /* Coins arrondis */
-    }
-
     /* Spécifique au texte BREAKING NEWS */
     .Photo_Equipe h1{
     color: orange;
@@ -57,29 +48,32 @@ body, html {
         margin-left: 40px; /* Marge à gauche */
     }
 
-    /* Spécifique à la barre de navigation */
-    .les_menus {
-        display: flex; /* Active le flexbox */
-        justify-content: center; /* Centre horizontalement les éléments du menu */
-        font-size: 20px; /* Taille du texte */
-        margin-left: 200px; /* Marge à gauche */
+    /*Spécifique au liens du menu du bandeau */
+    .menu-items {
+    display: flex; /* Active le flexbox */
+    margin-top: 30px; /* Décale le menu vers le bas */
+    font-size: 20px; /* Taille du texte */
+    margin-left: 220px; /* Marge à gauche */
     }
 
-    /* Spécifique à chaque élément du menu */
-    .nav-item {
-        margin-right: 20px; /* Espacement entre les éléments du menu */
+
+
+    /*Spécifique aux liens du menu <a> */
+    .menu-items a { 
+    color: orange; /* Change la couleur des liens */
+    margin-left: 30px; /* Espacement entre les liens */
     }
 
-    /* Spécifique à la barre de navigation */
-    .navbar-nav .nav-link {
-        color: orange; /* Change la couleur du texte des liens de navigation */
+
+    /*Spécifique aux  menu */
+    .menu-items li{ 
+    display: inline-block; /* Mets les 3 menu sur la meme ligne  */
     }
 
-    /* Spécifique à la barre de navigation au survol */
-    .navbar-nav .nav-link:hover {
-        color: red; /* Change la couleur du texte des liens de navigation au survol */
-    }
-
+    .menu-items a:hover {
+        color: red; /* Change la couleur des liens au survol */
+        transform: scale(1.2); /* Agrandissement au survol */
+    }    
 
                                         /*CATHEGORIE SUIVANTE/*
 
