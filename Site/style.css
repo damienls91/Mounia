@@ -327,7 +327,8 @@ body, html {
         .menu-container {
             position: relative; /* Position relative */
             display: inline-block; /* Affiche en ligne */
-            margin-left: 20%; /* Marge à gauche */
+            margin-left: 43%; /* Marge à gauche */
+            margin-top: 10px; /* Décale le menu vers le bas */
         }
 
         .menu-burger {
@@ -341,6 +342,7 @@ body, html {
             background-color: #000000; /* Couleur du fond */
             margin-top: -10px; /* Décale le menu vers le bas */
             margin-bottom: -10px; /* Décale le menu vers le bas */
+            margin-left: -55%; /* Marge à gauche */
             }
 
         .dropdown-menu a {
