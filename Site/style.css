@@ -24,7 +24,7 @@ body, html {
 
     /* Ajouter une image en arrière-plan pour le corps de la page */
     body {
-    background: linear-gradient(45deg, #5d5c5c, #beb5b5); /* Dégradé */
+    background: linear-gradient(45deg, #5d5c5c, #747272); /* Dégradé */
     }
 
 
@@ -110,7 +110,7 @@ body, html {
 
     /*Spécifique à la zone avec le texte défile */
     .zone-texte {
-    width: 1130px;  /* Largeur fixe de 1800 pixels */
+    width: 1250px;  /* Largeur fixe de 1250 pixels */
     height: 30px;  /* Hauteur fixe de 30 pixels */
     overflow: hidden; /* Cache le texte qui dépasse */ 
     }
@@ -140,8 +140,12 @@ body, html {
 
     /*Spécifique à l'orientation du défilement du texte  */
     @keyframes defilement {
+
        0% {
             transform: translateX(100%); /* Commence à droite */
+        }
+        4% {
+            transform: translateX(55%); /* Le texte coommence de défiler plus tôt au début */
         }
         100% {
             transform: translateX(-100%); /* Termine à gauche */
@@ -265,3 +269,157 @@ body, html {
         color: yellow; /* Couleur jaune */
         font-size: 20px; /* Taille du texte */
        }
+
+
+
+       /* --- RESPONSIVE DESIGN --- */
+
+    @media (min-width: 480px) {
+    .logo_menu {
+        display: none; /* Cache cet élément sur desktop */
+        }
+    .logo_mobile {
+        display: none; /* Cache cet élément sur desktop */
+        }
+    .bandeau_défile_mobile {
+        display: none; /* Cache cet élément sur desktop */
+        }
+        .menu-container {
+            display: none; /* Cache cet élément sur desktop */
+        }
+    }
+
+
+
+
+
+    @media (max-width: 480px) {
+        .bandeau_entête {
+            width: 102%; /* Largeur totale */
+        }
+        .bandeau_entête h2 {
+            font-size: 18px; /* Taille du texte */
+            text-align: center; /* Centre verticalement */
+        }
+        .bandeau {
+            width: 102%; /* Largeur totale */
+        }
+        .logo {
+            display: none; /* Cache cet élément sur mobile */
+            }
+        .logo_mobile {
+            display: block; /* Montre cet élément uniquement sur mobile */
+            margin-top: 10px; /* Décale le menu vers le bas */
+            margin-left: 10px; /* Marge à gauche */
+        }
+        .les_menus {
+            display: none; /* Cache cet élément sur mobile */
+        }
+        
+        .bandeau_défile {
+            display: none; /* Cache cet élément sur mobile */
+            }
+
+
+
+
+        /* Styles pour le menu déroulant */
+        .menu-container {
+            position: relative; /* Position relative */
+            display: inline-block; /* Affiche en ligne */
+            margin-left: 20%; /* Marge à gauche */
+        }
+
+        .menu-burger {
+            display: none; /* Cache le checkbox */
+        }
+
+        .dropdown-menu ul {
+            list-style: none; /* Enlève les puces */
+            padding: 0; /* Marge intérieure */
+            margin: 0; /* Marge extérieure */
+            background-color: #000000; /* Couleur du fond */
+            margin-top: -10px; /* Décale le menu vers le bas */
+            margin-bottom: -10px; /* Décale le menu vers le bas */
+            }
+
+        .dropdown-menu a {
+            display: block; /* Affiche en bloc */
+            padding: 15px; /* Marge intérieure */
+            text-decoration: none; /* Enlève le soulignement */
+            color: orange; /* Couleur du texte */
+            font-weight: bold; /* Texte en gras */
+        }
+
+        /* Afficher le menu lorsque le checkbox est coché */
+        .menu-burger:checked ~ .dropdown-menu {
+            display: block;
+        }
+
+
+
+
+        /*Spécifique Bandeau qui défile */
+        .bandeau_défile_mobile {
+        height: 50px; /* Hauteur du bandeau (modifiable) */
+        background-color: #333333; /* Couleur du fond */
+        color: orange; /* Couleur du texte */
+        display: flex; /* Active le flexbox */
+        align-items: center; /* Centre verticalement */
+        font-family: 'Arial', sans-serif; /* Type de police */
+        font-weight: bold; /* Texte en gras */
+        margin-left: 5px; /* Marge à gauche */
+        margin-right: 0px; /* Marge à droite */
+        margin-top: 20px; /* Décale le menu vers le bas */
+        padding-left: 40px; /* Décale le texte à 40px du bord gauche du bandeau */
+        }
+
+        /* Spécifique au texte BREAKING NEWS */
+        .bandeau_défile_mobile h2 {
+        font-weight: bold; /* Met le texte en gras */
+        font-size: 13px; /* Taille du texte */
+        margin-top: 8px; /* Décale le menu vers le bas */
+        margin-left: -20px; /* Marge à gauche */
+        }
+
+        
+            /*Spécifique symbole du Bandeau qui défile */
+        .symbole {
+        margin-left: 5px; /* Marge à gauche */
+        }
+
+        /*Spécifique à la zone avec le texte défile */
+        .zone-texte {
+        width: 300px;  /* Largeur fixe de 300 pixels */
+        height: 30px;  /* Hauteur fixe de 30 pixels */
+        overflow: hidden; /* Cache le texte qui dépasse */ 
+        }
+
+        /*Spécifique au texte qui défile */
+        .defilant {
+        animation: defilement 40s linear infinite; /* Animation/Durée du texte */
+        font-size: 12px; /* Taille du texte */
+        margin-top: 6px; /* Décale le menu vers le bas */
+        }
+
+        /*Spécifique à l'orientation du défilement du texte  */
+    @keyframes defilement {
+
+        0% {
+             transform: translateX(100%); /* Commence à droite */
+         }
+         1% {
+             transform: translateX(17%); /* Le texte coommence de défiler plus tôt au début */
+         }
+         100% {
+             transform: translateX(-100%); /* Termine à gauche */
+         }
+     }
+
+        .carousel-container {
+            width: 90%; /* 90% de la largeur totale de l'écran */
+        }
+        .employee {
+            width: 100%; /* Plus large */
+        }
+    }
