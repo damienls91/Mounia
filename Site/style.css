@@ -338,11 +338,10 @@ body, html {
         .dropdown-menu ul {
             list-style: none; /* Enlève les puces */
             padding: 0; /* Marge intérieure */
-            margin: 0; /* Marge extérieure */
+            margin: 0px; /* Marge extérieure */
             background-color: #000000; /* Couleur du fond */
             margin-top: -10px; /* Décale le menu vers le bas */
             margin-bottom: -10px; /* Décale le menu vers le bas */
-            margin-left: -55%; /* Marge à gauche */
             }
 
         .dropdown-menu a {
