@@ -97,7 +97,7 @@ body, html {
     /* Spécifique au texte BREAKING NEWS */
     .bandeau_défile h2 {
     font-weight: bold; /* Met le texte en gras */
-    font-size: 25px; /* Taille du texte */
+    font-size: 22px; /* Taille du texte */
     margin-top: 8px; /* Décale le menu vers le bas */
     }
 
@@ -295,14 +295,14 @@ body, html {
 
     @media (max-width: 480px) {
         .bandeau_entête {
-            width: 102%; /* Largeur totale */
+            width: 100%; /* Largeur totale */
         }
         .bandeau_entête h2 {
             font-size: 18px; /* Taille du texte */
             text-align: center; /* Centre verticalement */
         }
         .bandeau {
-            width: 102%; /* Largeur totale */
+            width: 100%; /* Largeur totale */
         }
         .logo {
             display: none; /* Cache cet élément sur mobile */
@@ -320,14 +320,11 @@ body, html {
             display: none; /* Cache cet élément sur mobile */
             }
 
-
-
-
         /* Styles pour le menu déroulant */
         .menu-container {
             position: relative; /* Position relative */
             display: inline-block; /* Affiche en ligne */
-            margin-left: 43%; /* Marge à gauche */
+            margin-left: 20%; /* Marge à gauche */
             margin-top: 10px; /* Décale le menu vers le bas */
         }
 
