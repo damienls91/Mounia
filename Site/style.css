@@ -325,7 +325,7 @@ body, html {
         .menu-container {
             position: relative; /* Position relative */
             display: inline-block; /* Affiche en ligne */
-            margin-left: 20%; /* Marge à gauche */
+            margin-left: 17%; /* Marge à gauche */
             margin-top: 10px; /* Décale le menu vers le bas */
         }
 
