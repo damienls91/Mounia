@@ -159,10 +159,6 @@ nav ul li a.active {
     color: #ffcc00;
 }
 
-.contact-info p {
-    margin: 10px 0;
-}
-
 /* 🌍 RÉSEAUX SOCIAUX */
 .social-links {
     margin-top: 15px;
@@ -195,7 +191,7 @@ footer {
     }
     .titre h1 {
         margin-left: 100px;
-        font-size: 25px;
+        font-size: 23px;
         margin-top: 15px;
     }
 }
